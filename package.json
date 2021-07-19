@@ -1,0 +1,15 @@
+{
+  "name": "Alfred-Optimum-Bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Alfred.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SuperSaiyajinStackZ",
+  "license": "GPLv3",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0"
+  }
+}
