@@ -8,7 +8,7 @@
 module.exports = {
 	Handler: function(Message) {
 		if (!Message.member.user.bot) { // Ensure it's not a bot.
-			if (Message.channel.id == process.env.CHANNEL_PUBLIC) {
+			if (Message.channel.id == process.env.CHANNEL_PUBLIC || Message.channel.id == process.env.CHANNEL_TEST) {
 	
 				switch(Message.content) {
 					default:

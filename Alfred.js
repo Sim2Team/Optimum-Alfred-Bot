@@ -23,7 +23,7 @@ Client.on('ready', () => {
 
 /* Handle message commands. */
 Client.on('message', Message => {
-	if (!Message.member.user.bot) { // Ensure it's in a guild and NOT a bot.
+	if (!Message.member.user.bot) { // Ensure it's not a bot.
 		let Handled = false;
 
 		Handled = SimpleCommands.Handler(Message);
