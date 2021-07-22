@@ -6,17 +6,10 @@
 
 /* Module: Dev Tools. */
 module.exports = {
-	Handler: function(Message) {
-		if (!Message.member.user.bot) { // Ensure it's not a bot.
-			if (Message.channel.id == process.env.CHANNEL_TEST) {
-	
-				switch(Message.content) {
-					default:
-						return false;
-				};
-			};
-		};
-
-		return false; // No command from here.
+	Names: ["Dev"],
+	Description: "Dev command test.",
+	Dev: true,
+	Handler(Message) {
+		return;
 	}
 };
