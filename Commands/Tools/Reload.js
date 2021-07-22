@@ -17,7 +17,7 @@ module.exports = {
 			const Commands = Alfred.Commands[Category].Commands;
 			for (let Command in Commands) {
 				for (let Name of Commands[Command].Names) {
-					if (Name.toLowerCase() == Message.Value) {
+					if (Name.toLowerCase() == Message.Value.toLowerCase()) {
 						delete require.cache[require.resolve(`../${Command}`)];
 						Alfred.Commands[Category].Commands[Command] = require(`../${Command}`);
 
