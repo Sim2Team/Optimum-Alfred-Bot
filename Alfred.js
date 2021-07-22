@@ -37,11 +37,11 @@ Alfred.Client.on("ready", () => {
 
 /* Handle message commands. */
 Alfred.Client.on("message", Message => {
-	if (Message.member.user.bot) return; // Ensure it's not a bot.
+	if (Message.member?.user.bot) return; // Ensure it's not a bot.
 	if (!Message.content.startsWith(Alfred.Config.Prefix)) return; // Ensure it has the bot prefix.
 	if (!Alfred.Config.Channels.includes(Message.channel.id)) return; // Ensure it's in a bot channel.
 
-	let Match = Message.content.match(RegExp(Alfred.Config.Prefix.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&") + "\\s*([^\\s]+)\\s*(.*)"));
+	let Match = Message.content.match(RegExp(Alfred.Config.Prefix.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&") + "\\s*([^\\s]+)\\s*(.*)", "si"));
 	if (Match.length < 2) return;
 	Message.Command = Match[1];
 	Message.Value = Match[2].trim();
