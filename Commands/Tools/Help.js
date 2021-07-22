@@ -11,12 +11,12 @@ module.exports = {
 	Handler(Message, Alfred) {
 		const Description = `Category List: ${Alfred.Config.Prefix}help\nCommand List: ${Alfred.Config.Prefix}help <category>\nCommand Info: ${Alfred.Config.Prefix}help <command>`;
 
-		if(Message.Value) {
+		if (Message.Value) {
 			for (let Category in Alfred.Commands) {
 				const Commands = Alfred.Commands[Category].Commands;
 	
 				/* Command List. */
-				if(Category.toLowerCase().includes(Message.Value.toLowerCase())) {
+				if (Category.toLowerCase().includes(Message.Value.toLowerCase())) {
 					let Fields = [];
 					for (let Command in Commands) {
 						Fields.push({
@@ -35,6 +35,7 @@ module.exports = {
 	
 				for (let Command in Commands) {
 					for (let Name of Commands[Command].Names) {
+						/* Command Info. */
 						if (Name.toLowerCase() == Message.Value.toLowerCase()) {
 							let Fields = [
 								{
@@ -53,7 +54,6 @@ module.exports = {
 								});
 							}
 
-							/* Command Info. */
 							Message.channel.send({embed: {
 								title: `${Commands[Command].Names[0]} command info`,
 								description: Description,
