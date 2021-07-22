@@ -9,6 +9,7 @@ const Discord = require("discord.js");
 /* Module: Simple Commands. */
 module.exports = {
 	Names: ["JavaScript", "JS"],
+	Usage: "<JavaScript code>",
 	Description: "Runs JavaScript code.",
 	Dev: true,
 	async Handler(Message, Alfred) {
