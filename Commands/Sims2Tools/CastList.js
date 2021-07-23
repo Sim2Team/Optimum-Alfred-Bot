@@ -155,8 +155,8 @@ const CastMembers = [
 		bio: "Intelligent, enigmatic, egotistical, irresistible... many have tried to woo this brilliant nuclear scientist. All have failed."
 	},
 	{
-		en: "Luthor G. Bigbucks",
-		de: "Lutz L. Roßeklappe",
+		en: "Luthor L. Bigbucks",
+		de: "Lutz G. Roßeklappe",
 		fr: "Léo Péhas",
 		es: "Lútor Millonetis",
 		it: "Luthor Soldoni",
@@ -306,22 +306,39 @@ const CastMembers = [
 
 /* Module: Cast List. */
 module.exports = {
-	Names: ["CastList"],
+	Names: ["CastList", "CastMember"],
 	Usage: "[command]",
-	Description: "Displays information about the Casts from The Sims 2 Game Boy Advance and Nintendo DS. You can search by the English, German, French, Spanish, Italian and Dutch names, but also from their ID's in hexadecimal and decimal. If no cast provided, it displays a list of all casts. You can also use \"-r\" as the command to choose a random cast.",
+	Description: "Displays information about the cast members from The Sims 2 Game Boy Advance and Nintendo DS. You can search by the English, German, French, Spanish, Italian and Dutch names, but also from their ID's in hexadecimal and decimal. If no cast member provided, it displays a list of all cast members. You can also use \"-r\" as the command to choose a random cast member.",
 	Handler(Message) {
-		const Name = Message.Value;
+		const Name = Message.Value; // Save the argument to a variable for more efficiency.
 		
-		/* Send cast list, if no name provided. */
-		if (Name.length < 1) Message.channel.send("You can find a list of all casts here: <InsertLinkWhenDone>.");
-		else {
+		/* Send an embed with all english cast names listed, if no name provided. */
+		if (Name.length < 1) {
+			let CastNames = "";
+
+			for (let Idx = 0; Idx < 25; Idx++) {
+				CastNames += CastMembers[Idx].en;
+				CastNames += "\n";
+			}
+			CastNames += CastMembers[25].en; // Push the last cast here, because we don't need a '\n' then.
+
+			const Embed = new Discord.MessageEmbed()
+				.setTitle("Cast List - You haven't provided a name!")
+				.setColor("#343840")
+				.setDescription("You haven't provided a name. Here is a list of all available cast members you can search.")
+				.addField("Cast Member List", CastNames);
+
+			Message.channel.send(Embed);
+		} else {
 			let CastMember;
 
-			if (Name == "-r") { // Select a cast randomly.
-				CastMember = CastMembers[Math.floor(Math.random() * 26)];
-			} else {
+			/* Select a cast randomly. */
+			if (Name == "-r") CastMember = CastMembers[Math.floor(Math.random() * 26)];
+			/* Here with the cast search. */
+			else {
 				let Id = parseInt(Name);
 
+				/* The provided thing is not an ID, so search by all language names. */
 				if (isNaN(Id)) {
 					let nameLower = Name.toLowerCase();
 					CastMember = CastMembers.filter(r => r.en.toLowerCase().includes(nameLower)
@@ -337,10 +354,10 @@ module.exports = {
 			
 			if (CastMember) {
 				const Embed = new Discord.MessageEmbed()
-					.setTitle("Cast: " + CastMember.en)
+					.setTitle("Cast Member: " + CastMember.en)
 					.setColor("#343840")
 					.setThumbnail(CastMember.image)
-					.setDescription("Cast Information for " + CastMember.en)
+					.setDescription("Cast Member Information for " + CastMember.en)
 					.addField("ID", CastMember.id)
 					.addField("English", CastMember.en, true)
 					.addField("German", CastMember.de, true)
@@ -352,7 +369,7 @@ module.exports = {
 			
 				Message.channel.send(Embed);
 			} else {
-				Message.channel.send("The cast name you provided doesn't exist!");
+				Message.channel.send("The cast member you provided doesn't exist!\nType \"?CastList\" or \"?CastMember\" without a command to get a list of all cast members.");
 			}
 		}
 	}

@@ -8,6 +8,7 @@
 module.exports = {
 	Names: ["Help"],
 	Description: "Shows a list of categories, commands, or info about a command.",
+	Usage: "[category] [command]",
 	Handler(Message, Alfred) {
 		const Description = `Category List: ${Alfred.Config.Prefix}help\nCommand List: ${Alfred.Config.Prefix}help <category>\nCommand Info: ${Alfred.Config.Prefix}help <command>`;
 
