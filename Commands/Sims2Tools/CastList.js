@@ -15,7 +15,7 @@ const CastMembers = [
 		it: "Imperatore Xizzle",
 		nl: "Keizer Xizzle",
 		id: 0x0,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/0.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/0.png"
 	},
 	{
 		en: "Burple",
@@ -25,7 +25,7 @@ const CastMembers = [
 		it: "Alieno",
 		nl: "Buitenaards wezen",
 		id: 0x1,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/1.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/1.png"
 	},
 	{
 		en: "Ara Fusilli",
@@ -35,7 +35,7 @@ const CastMembers = [
 		it: "Agnese Fusilli",
 		nl: "Natalia Fusilli",
 		id: 0x2,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/2.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/2.png"
 	},
 
 	{
@@ -46,7 +46,7 @@ const CastMembers = [
 		it: "Omar Sherif",
 		nl: "Omar Amoer",
 		id: 0x3,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/3.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/3.png"
 	},
 	{
 		en: "Ava Cadavra",
@@ -56,7 +56,7 @@ const CastMembers = [
 		it: "Ava Cadavra",
 		nl: "Selina Kadaveri",
 		id: 0x4,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/4.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/4.png"
 	},
 	{
 		en: "Bigfoot",
@@ -66,7 +66,7 @@ const CastMembers = [
 		it: "Piedone",
 		nl: "Grootpoot",
 		id: 0x5,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/5.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/5.png"
 	},
 
 	{
@@ -77,7 +77,7 @@ const CastMembers = [
 		it: "Frankie Fusilli",
 		nl: "Don Fusilli",
 		id: 0x6,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/6.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/6.png"
 	},
 	{
 		en: "Dusty Hogg",
@@ -87,7 +87,7 @@ const CastMembers = [
 		it: "Guido Lamoto",
 		nl: "Boris Spijker",
 		id: 0x7,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/7.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/7.png"
 	},
 	{
 		en: "Giuseppi Mezzoalto",
@@ -97,7 +97,7 @@ const CastMembers = [
 		it: "Giuseppe Mezzo",
 		nl: "Henk Schimmig",
 		id: 0x8,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/8.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/8.png"
 	},
 
 	{
@@ -108,7 +108,7 @@ const CastMembers = [
 		it: "Michele Leale",
 		nl: "Ernst Eerlijk",
 		id: 0x9,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/9.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/9.png"
 	},
 	{
 		en: "Jebediah Jerky",
@@ -118,7 +118,7 @@ const CastMembers = [
 		it: "Giobbe Rosse",
 		nl: "Harm Boersma",
 		id: 0xA,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/10.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/10.png"
 	},
 	{
 		en: "Jimmy the Neck",
@@ -128,7 +128,7 @@ const CastMembers = [
 		it: "Pino 'In' Gamba",
 		nl: "Sjimmie Speknek",
 		id: 0xB,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/11.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/11.png"
 	},
 
 	{
@@ -139,7 +139,7 @@ const CastMembers = [
 		it: "Deborah Fascino",
 		nl: "Kim Winterhart",
 		id: 0xC,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/12.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/12.png"
 	},
 	{
 		en: "Luthor G. Bigbucks",
@@ -149,7 +149,7 @@ const CastMembers = [
 		it: "Luthor Soldoni",
 		nl: "Daan D. Duit",
 		id: 0xD,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/13.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/13.png"
 	},
 	{
 		en: "Mamma Hogg",
@@ -159,7 +159,7 @@ const CastMembers = [
 		it: "Mamma Lamoto",
 		nl: "Ma Spijker",
 		id: 0xE,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/14.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/14.png"
 	},
 
 	{
@@ -170,7 +170,7 @@ const CastMembers = [
 		it: "Marina Mari",
 		nl: "Nina Natter",
 		id: 0xF,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/15.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/15.png"
 	},
 	{
 		en: "Lord Mole",
@@ -180,7 +180,7 @@ const CastMembers = [
 		it: "Mole King",
 		nl: "Mollenheer",
 		id: 0x10,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/16.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/16.png"
 	},
 	{
 		en: "Mummy",
@@ -190,7 +190,7 @@ const CastMembers = [
 		it: "Mummy",
 		nl: "Horus",
 		id: 0x11,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/17.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/17.png"
 	},
 
 	{
@@ -201,7 +201,7 @@ const CastMembers = [
 		it: "Alfredo Factotum",
 		nl: "Fred Optimum",
 		id: 0x12,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/18.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/18.png"
 	},
 	{
 		en: "Penelope Redd",
@@ -211,7 +211,7 @@ const CastMembers = [
 		it: "Dana Holmes",
 		nl: "Pien Speuring",
 		id: 0x13,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/19.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/19.png"
 	},
 	{
 		en: "Pepper Pete",
@@ -221,7 +221,7 @@ const CastMembers = [
 		it: "Salty Peter",
 		nl: "Pittige Peter",
 		id: 0x14,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/20.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/20.png"
 	},
 
 	{
@@ -232,7 +232,7 @@ const CastMembers = [
 		it: "Pietro Nuti",
 		nl: "Ben Baksteen",
 		id: 0x15,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/21.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/21.png"
 	},
 	{
 		en: "Sancho Paco Panza",
@@ -242,7 +242,7 @@ const CastMembers = [
 		it: "Sancho Paco Panza",
 		nl: "Sancho Kwispello",
 		id: 0x16,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/22.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/22.png"
 	},
 	{
 		en: "Tank Grunt",
@@ -252,7 +252,7 @@ const CastMembers = [
 		it: "Bruno Grugni",
 		nl: "Tank Grom",
 		id: 0x17,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/23.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/23.png"
 	},
 
 	{
@@ -263,7 +263,7 @@ const CastMembers = [
 		it: "Vito il Mito",
 		nl: "Tristan Legende",
 		id: 0x18,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/24.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/24.png"
 	},
 	{
 		en: "Yeti",
@@ -273,7 +273,7 @@ const CastMembers = [
 		it: "Yeti",
 		nl: "Jettie",
 		id: 0x19,
-		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/25.png"
+		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/25.png"
 	}
 ];
 
