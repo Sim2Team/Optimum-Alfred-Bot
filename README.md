@@ -18,6 +18,7 @@ If you are not sure what game it is, here are covers from both games:
 Optimum-Alfred-Bot has the following features as of the latest commit:
 
 - [x] `CastList [command]` / `CastMember [command]` - Displays information about the cast members from The Sims 2 Game Boy Advance and Nintendo DS.
+- [x] `About` - Shows some information about the bot.
 - [x] `Help [category] [command]` - Shows a list of categories, commands, or info about a command.
 - [x] `JavaScript <JavaScript Code>` / `JS <JavaScript Code>` - Runs JavaScript code. Only usable for developers.
 - [x] `Reload <Command>` - Reloads a command. Only usable for developers.
