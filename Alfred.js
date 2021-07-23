@@ -51,7 +51,7 @@ Alfred.Client.on("message", Message => {
 		for (let Command in Commands) {
 			for (let Name of Commands[Command].Names) {
 				if (Name.toLowerCase() == Message.Command.toLowerCase()) {
-					console.log(`${Message.member.user.tag} just executed the command '${Message.Command}'.`);
+					console.log(`[${(new Date).toLocaleTimeString()}] ${Message.member.user.tag} just executed the command '${Message.Command}'.`);
 					if (!Commands[Command].Dev || Alfred.Config.Developers.includes(Message.member.id)) {
 						try {
 							Commands[Command].Handler(Message, Alfred);
