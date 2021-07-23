@@ -314,19 +314,11 @@ module.exports = {
 		
 		/* Send an embed with all english cast names listed, if no name provided. */
 		if (Name.length < 1) {
-			let CastNames = "";
-
-			for (let Idx = 0; Idx < 25; Idx++) {
-				CastNames += CastMembers[Idx].en;
-				CastNames += "\n";
-			}
-			CastNames += CastMembers[25].en; // Push the last cast here, because we don't need a '\n' then.
-
 			const Embed = new Discord.MessageEmbed()
 				.setTitle("Cast List - You haven't provided a name!")
 				.setColor("#343840")
 				.setDescription("You haven't provided a name. Here is a list of all available cast members you can search.")
-				.addField("Cast Member List", CastNames);
+				.addField("Cast Member List", CastMembers.map(r => r.en).join("\n"));
 
 			Message.channel.send(Embed);
 		} else {
