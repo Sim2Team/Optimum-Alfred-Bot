@@ -33,6 +33,7 @@ console.log("Initializing the Bot...");
 /* Tell us, as what we logged in. */
 Alfred.Client.on("ready", () => {
 	console.log("Logged in as: " + Alfred.Client.user.tag + ".");
+	Alfred.Client.user.setActivity("Helping out in the Strangetown server.");
 });
 
 /* Handle message commands. */
