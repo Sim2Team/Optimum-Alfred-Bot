@@ -1,10 +1,13 @@
 /*
-	Main Entry Point from Alfred Optimum.
+	Main Entry Point from Optimum Alfred.
 
 	To use this bot, you need to create a '.env' file with the following things:
 		- BOT_TOKEN=<Token of your Discord Bot.>
-		- CHANNEL_PUBLIC=<Channel ID for the public bot channel.>
-		- CHANNEL_TEST=<Channel ID for testing purposes.>
+
+	Also to use this bot, you need to edit the `Config.json` with the following things:
+		- Channels: The Channel IDs where the bot is allowed to be used.
+		- Developers: The User IDs of the developers, that can use the commands that have `Dev: true` enabled.
+		- Prefix: The prefix the bot should use the commands with.
 */
 
 const Discord = require("discord.js");

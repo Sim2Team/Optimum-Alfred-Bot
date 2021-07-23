@@ -1,5 +1,5 @@
 /*
-	Alfred Optimum's Dev Tools Handler implementation.
+	Optimum Alfred's Dev Tools Handler implementation.
 
 	Handle tools for bot developers to test some things.
 */

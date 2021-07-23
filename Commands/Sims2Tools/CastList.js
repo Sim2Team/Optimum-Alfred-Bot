@@ -1,5 +1,5 @@
 /*
-	Alfred Optimums Cast List Handler implementation.
+	Optimum Alfred's Cast List Handler implementation.
 
 	Shows various informations about a specified Cast.
 */

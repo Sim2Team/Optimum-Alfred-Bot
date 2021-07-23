@@ -1,12 +1,12 @@
 {
-  "name": "Alfred-Optimum-Bot",
+  "name": "Optimum-Alfred-Bot",
   "version": "1.0.0",
   "description": "",
   "main": "Alfred.js",
   "scripts": {
     "start": "node Alfred.js"
   },
-  "author": "SuperSaiyajinStackZ",
+  "author": "Pk11, SuperSaiyajinStackZ",
   "license": "GPLv3",
   "dependencies": {
     "discord.js": "^12.5.3",

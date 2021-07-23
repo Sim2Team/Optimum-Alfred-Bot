@@ -1,5 +1,5 @@
 /*
-	Alfred Optimum's reload command.
+	Optimum Alfred's reload command.
 
 	Reloads a command.
 */

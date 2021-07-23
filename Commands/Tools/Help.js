@@ -1,5 +1,5 @@
 /*
-	Alfred Optimum's help command.
+	Optimum Alfred's help command.
 
 	Shows a list of categories, commands, or info about a command.
 */

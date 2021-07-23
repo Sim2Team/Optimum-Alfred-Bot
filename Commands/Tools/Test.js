@@ -1,5 +1,5 @@
 /*
-	Alfred Optimum's Simple Commands Handler implementation.
+	Optimum Alfred's Simple Commands Handler implementation.
 
 	Handle simple message commands, that may not fit anywhere else or so.
 */
