@@ -7,6 +7,7 @@
 	Also to use this bot, you need to edit the `Config.json` with the following things:
 		- Channels: The Channel IDs where the bot is allowed to be used.
 		- Developers: The User IDs of the developers, that can use the commands that have `Dev: true` enabled.
+		- Roles: The Role IDs the bot is allowed to toggle.
 		- Prefix: The prefix the bot should use the commands with.
 */
 
