@@ -44,8 +44,6 @@ module.exports = {
 				}
 			}
 
-			console.log(Role);
-
 			if(Role) {
 				(Message.member.roles.cache.has(Role) ? RemoveRoles : AddRoles).push(Role);
 			} else {
