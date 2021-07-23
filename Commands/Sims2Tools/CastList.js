@@ -10,140 +10,270 @@ const CastMembers = [
 	{
 		en: "Emperor Xizzle",
 		de: "Imperator Xizzle",
-		id: 0x0
+		fr: "Empereur Xizzle",
+		es: "Emperador Xizzle",
+		it: "Imperatore Xizzle",
+		nl: "Keizer Xizzle",
+		id: 0x0,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/0.png"
 	},
 	{
 		en: "Burple",
 		de: "Burpel",
-		id: 0x1
+		fr: "Gargl",
+		es: "Alienígena",
+		it: "Alieno",
+		nl: "Buitenaards wezen",
+		id: 0x1,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/1.png"
 	},
 	{
 		en: "Ara Fusilli",
 		de: "Ara Fusilli",
-		id: 0x2
+		fr: "Ara Fusilli",
+		es: "Ara Fusilli",
+		it: "Agnese Fusilli",
+		nl: "Natalia Fusilli",
+		id: 0x2,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/2.png"
 	},
 
 	{
 		en: "Auda Sherif",
 		de: "Kulio Raubein",
-		id: 0x3
+		fr: "Clint Shérif",
+		es: "Auda Sherif",
+		it: "Omar Sherif",
+		nl: "Omar Amoer",
+		id: 0x3,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/3.png"
 	},
 	{
 		en: "Ava Cadavra",
 		de: "Avra Kadavra",
-		id: 0x4
+		fr: "Ava Cadavra",
+		es: "Ava Cadavra",
+		it: "Ava Cadavra",
+		nl: "Selina Kadaveri",
+		id: 0x4,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/4.png"
 	},
 	{
 		en: "Bigfoot",
 		de: "Bigfoot",
-		id: 0x5
+		fr: "Bigfoot",
+		es: "Piegrande",
+		it: "Piedone",
+		nl: "Grootpoot",
+		id: 0x5,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/5.png"
 	},
 
 	{
 		en: "Frankie Fusilli",
 		de: "Frankie Fusilli",
-		id: 0x6
+		fr: "Frankie Fusilli",
+		es: "Frankie Fusilli",
+		it: "Frankie Fusilli",
+		nl: "Don Fusilli",
+		id: 0x6,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/6.png"
 	},
 	{
 		en: "Dusty Hogg",
 		de: "Eber-Eddie",
-		id: 0x7
+		fr: "Rocky O'Roar",
+		es: "Jonny Melavo",
+		it: "Guido Lamoto",
+		nl: "Boris Spijker",
+		id: 0x7,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/7.png"
 	},
 	{
 		en: "Giuseppi Mezzoalto",
 		de: "Bruno Mezzoalto",
-		id: 0x8
+		fr: "Manuel Travos",
+		es: "Giuseppi Ruedi",
+		it: "Giuseppe Mezzo",
+		nl: "Henk Schimmig",
+		id: 0x8,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/8.png"
 	},
 
 	{
 		en: "Honest Jackson",
 		de: "Heinz Ehrlicher",
-		id: 0x9
+		fr: "Paulo Norable",
+		es: "Manu el Honesto",
+		it: "Michele Leale",
+		nl: "Ernst Eerlijk",
+		id: 0x9,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/9.png"
 	},
 	{
 		en: "Jebediah Jerky",
 		de: "Siegfried Gülle",
-		id: 0xA
+		fr: "Marius Bouseux",
+		es: "Jebediah Cecina",
+		it: "Giobbe Rosse",
+		nl: "Harm Boersma",
+		id: 0xA,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/10.png"
 	},
 	{
 		en: "Jimmy the Neck",
 		de: "Stiernacken-Jimmy",
-		id: 0xB
+		fr: "Jimmy 'les gros bras'",
+		es: "Jaimito el Cuellos",
+		it: "Pino 'In' Gamba",
+		nl: "Sjimmie Speknek",
+		id: 0xB,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/11.png"
 	},
 
 	{
 		en: "Kayleigh Wintercrest",
 		de: "Katie Wintergipfel",
-		id: 0xC
+		fr: "Katia Sionnel",
+		es: "Quelin Bernal",
+		it: "Deborah Fascino",
+		nl: "Kim Winterhart",
+		id: 0xC,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/12.png"
 	},
 	{
 		en: "Luthor G. Bigbucks",
 		de: "Lutz L. Roßeklappe",
-		id: 0xD
+		fr: "Léo Péhas",
+		es: "Lútor Millonetis",
+		it: "Luthor Soldoni",
+		nl: "Daan D. Duit",
+		id: 0xD,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/13.png"
 	},
 	{
 		en: "Mamma Hogg",
 		de: "Mama Eber",
-		id: 0xE
+		fr: "Mama O'Roar",
+		es: "Mamá Melavo",
+		it: "Mamma Lamoto",
+		nl: "Ma Spijker",
+		id: 0xE,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/14.png"
 	},
 
 	{
 		en: "Misty Waters",
 		de: "Wilma Welle",
-		id: 0xF
+		fr: "Barbara Scooley",
+		es: "Nieves Pesas",
+		it: "Marina Mari",
+		nl: "Nina Natter",
+		id: 0xF,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/15.png"
 	},
 	{
 		en: "Lord Mole",
 		de: "Maulwurfkönig",
-		id: 0x10
+		fr: "Roi des taupes",
+		es: "Rey de los topos",
+		it: "Mole King",
+		nl: "Mollenheer",
+		id: 0x10,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/16.png"
 	},
 	{
 		en: "Mummy",
 		de: "Mumie",
-		id: 0x11
+		fr: "Momie",
+		es: "Mummy",
+		it: "Mummy",
+		nl: "Horus",
+		id: 0x11,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/17.png"
 	},
 
 	{
 		en: "Optimum Alfred",
 		de: "Alfred Optimus",
-		id: 0x12
+		fr: "Super Alfred",
+		es: "Alfred Óptimo",
+		it: "Alfredo Factotum",
+		nl: "Fred Optimum",
+		id: 0x12,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/18.png"
 	},
 	{
 		en: "Penelope Redd",
 		de: "Penelope Rot",
-		id: 0x13
+		fr: "Steph Biaye",
+		es: "Penélope Rojj",
+		it: "Dana Holmes",
+		nl: "Pien Speuring",
+		id: 0x13,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/19.png"
 	},
 	{
 		en: "Pepper Pete",
 		de: "Pfeffer-Paule",
-		id: 0x14
+		fr: "Felipe Spadon",
+		es: "Pepe Pimienta",
+		it: "Salty Peter",
+		nl: "Pittige Peter",
+		id: 0x14,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/20.png"
 	},
 
 	{
 		en: "Kent Hackett",
 		de: "Heini Stiesel",
-		id: 0x15
+		fr: "Rock Louzer",
+		es: "Rock Ola",
+		it: "Pietro Nuti",
+		nl: "Ben Baksteen",
+		id: 0x15,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/21.png"
 	},
 	{
 		en: "Sancho Paco Panza",
 		de: "Simon Paco Pancho",
-		id: 0x16
+		fr: "Sancho Panda",
+		es: "Sancho Paco Panza",
+		it: "Sancho Paco Panza",
+		nl: "Sancho Kwispello",
+		id: 0x16,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/22.png"
 	},
 	{
 		en: "Tank Grunt",
 		de: "Eugen Panza",
-		id: 0x17
+		fr: "Tank Troufion",
+		es: "Tanque Reclutas",
+		it: "Bruno Grugni",
+		nl: "Tank Grom",
+		id: 0x17,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/23.png"
 	},
 
 	{
 		en: "Tristan Legend",
 		de: "Tristan Legende",
-		id: 0x18
+		fr: "Tristan Mithik",
+		es: "Tristán Cuentochino",
+		it: "Vito il Mito",
+		nl: "Tristan Legende",
+		id: 0x18,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/24.png"
 	},
 	{
-		"en": "Yeti",
-		"de": "Yeti",
-		id: 0x19
+		en: "Yeti",
+		de: "Yeti",
+		fr: "Yéti",
+		es: "Yeti",
+		it: "Yeti",
+		nl: "Jettie",
+		id: 0x19,
+		image: "https://wiki.universal-team.net/assets/images/s2-research/cast/25.png"
 	}
 ];
 
@@ -152,7 +282,7 @@ const CastMembers = [
 module.exports = {
 	Names: ["CastList"],
 	Usage: "[command]",
-	Description: "Displays information about the Casts from The Sims 2 Game Boy Advance and Nintendo DS.",
+	Description: "Displays information about the Casts from The Sims 2 Game Boy Advance and Nintendo DS. You can search by the English, German, French, Spanish, Italian and Dutch names, but also from their ID's in hexadecimal and decimal. If no cast provided, it displays a list of all casts.",
 	Handler(Message) {
 		const Name = Message.Value;
 		
@@ -164,7 +294,12 @@ module.exports = {
 
 			if (isNaN(Id)) {
 				let nameLower = Name.toLowerCase();
-				CastMember = CastMembers.filter(r => r.en.toLowerCase().includes(nameLower) || r.de.toLowerCase().includes(nameLower))?.[0];
+				CastMember = CastMembers.filter(r => r.en.toLowerCase().includes(nameLower)
+						|| r.de.toLowerCase().includes(nameLower)
+						|| r.fr.toLowerCase().includes(nameLower)
+						|| r.es.toLowerCase().includes(nameLower)
+						|| r.it.toLowerCase().includes(nameLower)
+						|| r.nl.toLowerCase().includes(nameLower))?.[0];
 			} else {
 				CastMember = CastMembers.filter(r => r.id == Id)?.[0];
 			}
@@ -173,10 +308,15 @@ module.exports = {
 				const Embed = new Discord.MessageEmbed()
 					.setTitle("Cast: " + CastMember.en)
 					.setColor("#343840")
+					.setThumbnail(CastMember.image)
 					.setDescription("Cast Information for " + CastMember.en)
 					.addField("ID", CastMember.id)
 					.addField("English", CastMember.en, true)
-					.addField("German", CastMember.de, true);
+					.addField("German", CastMember.de, true)
+					.addField("French", CastMember.fr, true)
+					.addField("Spanish", CastMember.es, true)
+					.addField("Italian", CastMember.it, true)
+					.addField("Dutch", CastMember.nl, true);
 			
 				Message.channel.send(Embed);
 			} else {
