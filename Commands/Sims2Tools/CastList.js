@@ -7,6 +7,7 @@
 const Discord = require("discord.js");
 
 const CastMembers = [
+	/* Cast Page 1 / 9. */
 	{
 		en: "Emperor Xizzle",
 		de: "Imperator Xizzle",
@@ -18,7 +19,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/0.png",
 		gbabio: "BEHOLD! Alien Emperor Xizzle the Feared! The Reviled! The Loathed! The Canny! The Misunderstood! The UNINTELLIGIBLE.",
 		ndsbio: "BEHOLD! Alien Emperor Xizzle the Feared! The Reviled! The UNINTELLIGABLE.",
-		gbasecret: "Believes that laughter is the sound humans make when frightened."
+		gbasecret: "Believes that laughter is the sound humans make when frightened.",
+		emoji: "<:emperorxizzle:870964980491644958>"
 	},
 	{
 		en: "Burple",
@@ -31,7 +33,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/1.png",
 		gbabio: "A bitter little off-worlder. Burple is one hot-tempered extra-terrestrial. Fortunately, he's very easy to understand.",
 		ndsbio: "Biography doesn't exist.", // Doesn't exist as a cast in the NDS version.
-		gbasecret: "Has excellent grammar due to a rare alien speech impediment."
+		gbasecret: "Has excellent grammar due to a rare alien speech impediment.",
+		emoji: "<:burple:870965024716369921>"
 	},
 	{
 		en: "Ara Fusilli",
@@ -44,9 +47,11 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/2.png",
 		gbabio: "Ara is the extraordinarily smart, undeniably sassy, and terminally bored daughter of local gangster Frankie Fusilli.",
 		ndsbio: "Ara is the smart, sassy, and terminally bored daughter of Frankie Fusilli.",
-		gbasecret: "Always knows which way is North."
+		gbasecret: "Always knows which way is North.",
+		emoji: "<:arafusilli:870965059285831682>"
 	},
 
+	/* Cast Page 2 / 9. */
 	{
 		en: "Auda Sherif",
 		de: "Kulio Raubein",
@@ -58,7 +63,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/3.png",
 		gbabio: "The world of big-budget, action-packed, spectacle films can be divided into two phases: Pre-Auda and Post-Auda. He put the \"Oo!\" in boom!",
 		ndsbio: "This big-budget action film star put the 'Oo!' in boom!",
-		gbasecret: "Has degrees in Astrophysics and Gravimetrics; doesn't remember a thing."
+		gbasecret: "Has degrees in Astrophysics and Gravimetrics; doesn't remember a thing.",
+		emoji: "<:audasherif:870965094035640351>"
 	},
 	{
 		en: "Ava Cadavra",
@@ -71,7 +77,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/4.png",
 		gbabio: "Ex-drummer for the cult band The Germinators. Ava Cadavra has shifted gears and spends most of her time tending and talking to plants in her greenhouse.",
 		ndsbio: "Ex-drummer for the band The Germinators, Ava now spends most of her time brooding.",
-		gbasecret: "Used to be a ballerina."
+		gbasecret: "Used to be a ballerina.",
+		emoji: "<:avacadavra:870965230656704522>"
 	},
 	{
 		en: "Bigfoot",
@@ -84,9 +91,11 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/5.png",
 		gbabio: "For decades, people assumed Bigfoot was a mere creature of rumor and imagination. Now that they know he's real, they don't pay much attention to him.",
 		ndsbio: "For decades people assumed Bigfoot was a mere creature of rumor and imagination.",
-		gbasecret: "Would prefer to go by the name Stu, but no one seems to care."
+		gbasecret: "Would prefer to go by the name Stu, but no one seems to care.",
+		emoji: "<:bigfoot:870965273094684742>"
 	},
 
+	/* Cast Page 3 / 9. */
 	{
 		en: "Frankie Fusilli",
 		de: "Frankie Fusilli",
@@ -98,7 +107,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/6.png",
 		gbabio: "Frankie Fusilli runs this town, understand? Don't cross him or you'll be rubbed out. Eventually. It may take fifty or sixty years, but it'll happen. Get it?",
 		ndsbio: "Frankie Fusilli runs this town, understand? Don't cross him or you'll be rubbed out.",
-		gbasecret: "Prefers Thai food to Italian."
+		gbasecret: "Prefers Thai food to Italian.",
+		emoji: "<:frankiefusilli:870965306103840798>"
 	},
 	{
 		en: "Dusty Hogg",
@@ -111,7 +121,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/7.png",
 		gbabio: "Dusty has a mean streak much longer than his patience, but if you can prove you're tough, he just might like you.",
 		ndsbio: "Dusty has a mean streak much longer than his patience.",
-		gbasecret: "Believes the fewer wheels on the vehicle, the bigger the man; wants to unicycle."
+		gbasecret: "Believes the fewer wheels on the vehicle, the bigger the man; wants to unicycle.",
+		emoji: "<:dustyhogg:870965336713854996>"
 	},
 	{
 		en: "Giuseppi Mezzoalto",
@@ -124,9 +135,11 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/8.png",
 		gbabio: "Since moving here from SimValley, Giuseppi has ditched his black-market dealings. Now he's just a shady guy.",
 		ndsbio: "Since moving here from SimValley, Giuseppi has gone from criminal to \"shady guy\".",
-		gbasecret: "Was replaced by a robot in the last game."
+		gbasecret: "Was replaced by a robot in the last game.",
+		emoji: "<:giuseppimezzoalto:870965367542022174>"
 	},
 
+	/* Cast Page 4 / 9. */
 	{
 		en: "Honest Jackson",
 		de: "Heinz Ehrlicher",
@@ -138,7 +151,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/9.png",
 		gbabio: "Honest Jackson rose to political prominence after beating Andy Scandal in the race for mayor. Now he's working hard to shape the city.",
 		ndsbio: "Mayor Jackson rose to prominence after beating Andy Scandal in the race for mayor.",
-		gbasecret: "Has an idea for a 16 volume romance novel set in ancient Egypt (and has written 7 pages)."
+		gbasecret: "Has an idea for a 16 volume romance novel set in ancient Egypt (and has written 7 pages).",
+		emoji: "<:honestjackson:870965427319230485>"
 	},
 	{
 		en: "Jebediah Jerky",
@@ -151,7 +165,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/10.png",
 		gbabio: "Jebediah has lived in Strangetown longer than the place has had a name. He's trying to keep his farm alive, but to tell the truth, he can't remember what he used to grow.",
 		ndsbio: "Jeb wants to revive his old farm, but he can't remember what he used to grow.",
-		gbasecret: "Is a real-estate tycoon with several homes in other countries."
+		gbasecret: "Is a real-estate tycoon with several homes in other countries.",
+		emoji: "<:jebediahjerky:870965477319532575>"
 	},
 	{
 		en: "Jimmy the Neck",
@@ -164,9 +179,11 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/11.png",
 		gbabio: "Jimmy, \"The\" Neck is a lunk with a heart of lead. He's nice and dumb and gets along well with children. But if you cross him, he'll probably consider fighting back.",
 		ndsbio: "Biography doesn't exist.", // Doesn't exist as a cast in the NDS version.
-		gbasecret: "Teaches jazz and ragtime piano to children in his spare time."
+		gbasecret: "Teaches jazz and ragtime piano to children in his spare time.",
+		emoji: "<:jimmytheneck:870965548320718878>"
 	},
 
+	/* Cast Page 5 / 9. */
 	{
 		en: "Kayleigh Wintercrest",
 		de: "Katie Wintergipfel",
@@ -178,7 +195,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/12.png",
 		gbabio: "Intelligent, enigmatic, egotistical, irresistible... many have tried to woo this brilliant nuclear scientist. All have failed.",
 		ndsbio: "Intelligent and enigmatic... many have tried to woo this brilliant scientist. All have failed.",
-		gbasecret: "Only has four toes on her right foot as a result of a karate accident."
+		gbasecret: "Only has four toes on her right foot as a result of a karate accident.",
+		emoji: "<:kayleighwintercrest:870965583351545866>"
 	},
 	{
 		en: "Luthor L. Bigbucks",
@@ -191,7 +209,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/13.png",
 		gbabio: "Luthor is the handsome, talented, and arrogant son of Daddy Bigbucks. Easy to hate, but impossible to ignore.",
 		ndsbio: "Luthor is the handsome, arrogant son of Mr. Bigbucks. Easy to hate, but impossible to ignore.",
-		gbasecret: "Was actually kicked out of his father's house for being frugal with his money."
+		gbasecret: "Was actually kicked out of his father's house for being frugal with his money.",
+		emoji: "<:luthorlbigbucks:870965679447244800>"
 	},
 	{
 		en: "Mamma Hogg",
@@ -204,9 +223,11 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/14.png",
 		gbabio: "The only woman tough enough to keep Dusty in line - his mother.",
 		ndsbio: "The only woman tough enough to keep Dusty in line - his mother.",
-		gbasecret: "Has her hot-curlers plugged into a mini-fusion reactor at home."
+		gbasecret: "Has her hot-curlers plugged into a mini-fusion reactor at home.",
+		emoji: "<:mammahogg:870965770346180608>"
 	},
 
+	/* Cast Page 6 / 9. */
 	{
 		en: "Misty Waters",
 		de: "Wilma Welle",
@@ -218,7 +239,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/15.png",
 		gbabio: "One-time lifeguard turned fitness guru, Misty is in Strangetown to live large and scout location for her new business",
 		ndsbio: "Lifeguard turned successful fitness guru, Misty is in Strangetown to live large.",
-		gbasecret: "Has an evil - or let's say devious - twin named Murky."
+		gbasecret: "Has an evil - or let's say devious - twin named Murky.",
+		emoji: "<:mistywaters:870965813086142505>"
 	},
 	{
 		en: "Lord Mole",
@@ -231,7 +253,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/16.png",
 		gbabio: "Self-proclaimed ruler of subterranean race of mole people. Lord Mole is a feisty man with utopian dreams.",
 		ndsbio: "Ruler of a subterranean race of mole people, he is a feisty lad with utopian dreams.",
-		gbasecret: "Is afraid of the dark."
+		gbasecret: "Is afraid of the dark.",
+		emoji: "<:lordmole:870965846346960916>"
 	},
 	{
 		en: "Mummy",
@@ -244,9 +267,11 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/17.png",
 		gbabio: "Horus Menhoset the ninth, son of Horus Hipsomet the fourth, grandson of Horus Kliptosap the eighteenth, great-grandson of Horus Palimpsest the Plinth.",
 		ndsbio: "He is the son of Horus Hipsomet the 4th, grandson of Horus Palimpsest the Plinth.",
-		gbasecret: "Has established a profitable online gift-wrapping service."
+		gbasecret: "Has established a profitable online gift-wrapping service.",
+		emoji: "<:mummy:870965902500323349>"
 	},
 
+	/* Cast Page 7 / 9. */
 	{
 		en: "Optimum Alfred",
 		de: "Alfred Optimus",
@@ -258,7 +283,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/18.png",
 		gbabio: "A robot mechanic whose A.I. proved so sophisticated he was able to secure a loon from a bank and open his own business.",
 		ndsbio: "A robot whose A.I. proved so sophisticated he was nearly elected governor.",
-		gbasecret: "Actually loathes working on machines. He wants to be a biologist."
+		gbasecret: "Actually loathes working on machines. He wants to be a biologist.",
+		emoji: "<:optimumalfred:870965927062163457>"
 	},
 	{
 		en: "Penelope Redd",
@@ -271,7 +297,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/19.png",
 		gbabio: "Penelope is a cool and calculating woman on a mission. She was sent here by the FBI to investigate a matter of urgent importance.",
 		ndsbio: "Penelope was sent here by the FBI to investigate a matter of urgent import.",
-		gbasecret: "Her boss at the FBI hasn't actually told her why she is in Strangetown."
+		gbasecret: "Her boss at the FBI hasn't actually told her why she is in Strangetown.",
+		emoji: "<:peneloperedd:870965967126134794>"
 	},
 	{
 		en: "Pepper Pete",
@@ -284,9 +311,11 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/20.png",
 		gbabio: "Pepper Pete, swashbuckling brother of Salty Sam, is temporarily land-locked in Strangetown and in search of a few good oarsmen.",
 		ndsbio: "Pete is in Strangetown searching for a few good oarsmen to join him on a fool's errand.",
-		gbasecret: "Hates the taste of pepper; prefers garlic."
+		gbasecret: "Hates the taste of pepper; prefers garlic.",
+		emoji: "<:pepperpete:870966016321138759>"
 	},
 
+	/* Cast Page 8 / 9. */
 	{
 		en: "Kent Hackett",
 		de: "Heini Stiesel",
@@ -298,7 +327,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/21.png",
 		gbabio: "Once the star of a cult science fiction television program. Kent now works in a warehouse, dreaming of the movie deal that may never come.",
 		ndsbio: "Once the star of a sci-fi TV program, Kent now basks in his cult status as an old dork.",
-		gbasecret: "Has regularly watched re-runs of \"Chaz Dastard's Intergalactic Star Safari\" for 12 years."
+		gbasecret: "Has regularly watched re-runs of \"Chaz Dastard's Intergalactic Star Safari\" for 12 years.",
+		emoji: "<:kenthackett:870966047056986122>"
 	},
 	{
 		en: "Sancho Paco Panza",
@@ -311,7 +341,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/22.png",
 		gbabio: "Sancho earned his Masters in Zoology from Miniopolis University. He has spent the last 5 years collecting specimens for the Strangetown Zoo.",
 		ndsbio: "Sancho earned his Masters in Zoology two years ago. Now he just hangs out.",
-		gbasecret: "Is dangerously allergic to horses."
+		gbasecret: "Is dangerously allergic to horses.",
+		emoji: "<:sanchopacopanza:870966126014783498>"
 	},
 	{
 		en: "Tank Grunt",
@@ -324,9 +355,11 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/23.png",
 		gbabio: "The son of an Army General. Tank was destined to follow in his father's footsteps until an injured funny bone left him permanently without a sense of irony.",
 		ndsbio: "Tank injured his funny bone in combat. This left him permanently without a sense of irony.",
-		gbasecret: "Camouflage pattern is actually tattooed on his face."
+		gbasecret: "Camouflage pattern is actually tattooed on his face.",
+		emoji: "<:tankgrunt:870966172173094983>"
 	},
 
+	/* Cast Page 9 / 9. */
 	{
 		en: "Tristan Legend",
 		de: "Tristan Legende",
@@ -338,7 +371,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/24.png",
 		gbabio: "Not much is known about infamous Tristan Legend except that he is more handsome, more charismatic, and more talented than anyone on earth.",
 		ndsbio: "More handsome, witty, and talented than anyone on Earth. And he cooks!",
-		gbasecret: "Composed a symphony in his head at age six, while climbing mount Everest."
+		gbasecret: "Composed a symphony in his head at age six, while climbing mount Everest.",
+		emoji: "<:tristanlegend:870966194897838111>"
 	},
 	{
 		en: "Yeti",
@@ -351,7 +385,8 @@ const CastMembers = [
 		image: "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/25.png",
 		gbabio: "Bigfoot's high-altitude cousin, the Yeti has been seen fewer times than the Strangetown unicorn. (The WHAT?!?!)",
 		ndsbio: "Biography doesn't exist.", // Doesn't exist as a cast in the NDS version.
-		gbasecret: "If shaven he would actually disappear."
+		gbasecret: "If shaven he would actually disappear.",
+		emoji: "<:yeti:870966222395699220>"
 	}
 ];
 
@@ -390,7 +425,8 @@ module.exports = {
 							|| r.fr.toLowerCase().includes(nameLower)
 							|| r.es.toLowerCase().includes(nameLower)
 							|| r.it.toLowerCase().includes(nameLower)
-							|| r.nl.toLowerCase().includes(nameLower))?.[0];
+							|| r.nl.toLowerCase().includes(nameLower)
+							|| r.emoji.toLowerCase().includes(nameLower))?.[0];
 				} else {
 					CastMember = CastMembers.filter(r => r.id == Id)?.[0];
 				}
@@ -401,7 +437,7 @@ module.exports = {
 					.setTitle("Cast Member: " + CastMember.en)
 					.setColor("#343840")
 					.setThumbnail(CastMember.image)
-					.setDescription("Cast Member Information for " + CastMember.en)
+					.setDescription("Cast Member Information for " + CastMember.en + " " + CastMember.emoji)
 					.addField("ID", CastMember.id)
 					.addField("English", CastMember.en, true)
 					.addField("German", CastMember.de, true)
