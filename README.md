@@ -23,6 +23,7 @@ Optimum-Alfred-Bot has the following features as of the latest commit:
 - [x] `JavaScript <JavaScript Code>` / `JS <JavaScript Code>` - Runs JavaScript code. Only usable for developers.
 - [x] `Reload <Command>` - Reloads a command. Only usable for developers.
 - [x] `Role <role names, comma separated>` - Toggles roles, sends a list if no roles given.
+- [x] `Sim2Editor [command]` / `S2Editor [command]` - Some commands related to [Sim2Editor](https://supersaiyajinstackz.github.io/Sim2Editor/).
 
 
 ## Credits
