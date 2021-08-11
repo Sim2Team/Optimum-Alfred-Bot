@@ -1,6 +1,6 @@
 # Optimum-Alfred-Bot
 
-Optimum-Alfred-Bot is a discord bot written in Node.js / Discord.js for the [Strangetown Discord Server](https://discord.gg/dqfrTaerB6).
+Optimum-Alfred-Bot is a discord bot written in Node.js / Discord.js for the [Universal-Server](https://universal-team.net/discord).
 
 The discord server is for fans of `The Sims 2` for the Game Boy Advance and the Nintendo DS. For more information, Check the [Strangetown](https://supersaiyajinstackz.github.io/strangetown) section of my website.
 
@@ -22,7 +22,6 @@ Optimum-Alfred-Bot has the following features as of the latest commit:
 - [x] `Help [category] [command]` - Shows a list of categories, commands, or info about a command.
 - [x] `JavaScript <JavaScript Code>` / `JS <JavaScript Code>` - Runs JavaScript code. Only usable for developers.
 - [x] `Reload <Command>` - Reloads a command. Only usable for developers.
-- [x] `Role <role names, comma separated>` - Toggles roles, sends a list if no roles given.
 - [x] `Sim2Editor [command]` / `S2Editor [command]` - Some commands related to [Sim2Editor](https://supersaiyajinstackz.github.io/Sim2Editor/).
 
 
