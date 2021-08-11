@@ -11,14 +11,17 @@
 		- Prefix: The prefix the bot should use the commands with.
 */
 
-const Discord = require("discord.js");
+const {Client, Intents} = require("discord.js");
 const fs = require("fs");
 require("dotenv").config();
 
 const Alfred = {
-	Commands: {},
+	Commands: { },
 	Config: require("./Config.json"),
-	Client: new Discord.Client() // Create a new discord client / bot in our case.
+	Client: new Client({
+		intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES], // Base Intents.
+		allowedMentions: { parse: [], repliedUser: false } // Don't ping.
+	}) // Create a new discord client / bot in our case.
 };
 
 for (let Category of fs.readdirSync("Commands")) {
@@ -37,11 +40,11 @@ console.log("Initializing the Bot...");
 /* Tell us, as what we logged in. */
 Alfred.Client.on("ready", () => {
 	console.log("Logged in as: " + Alfred.Client.user.tag + ".");
-	Alfred.Client.user.setActivity("Helping out in the Strangetown server.");
+	Alfred.Client.user.setActivity("Helping out with Sims 2 GBA / NDS stuff.");
 });
 
 /* Handle message commands. */
-Alfred.Client.on("message", Message => {
+Alfred.Client.on("messageCreate", Message => {
 	if (Message.member?.user.bot) return; // Ensure it's not a bot.
 	if (!Message.content.startsWith(Alfred.Config.Prefix)) return; // Ensure it has the bot prefix.
 	if (!Alfred.Config.Channels.includes(Message.channel.id)) return; // Ensure it's in a bot channel.

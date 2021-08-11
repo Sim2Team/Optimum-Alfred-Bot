@@ -25,12 +25,12 @@ module.exports = {
 							value: Commands[Command].Description + (Commands[Command].Names.length > 1 ? ("\nOther names: " + Commands[Command].Names.slice(1).join(", ")) : "")
 						});
 					}
-	
-					Message.channel.send({embed: {
+
+					Message.channel.send({embeds: [{
 						title: `Command list for ${Category} category`,
 						description: Description,
 						fields: Fields
-					}});
+					}]});
 					return;
 				}
 	
@@ -55,11 +55,11 @@ module.exports = {
 								});
 							}
 
-							Message.channel.send({embed: {
+							Message.channel.send({embeds: [{
 								title: `${Commands[Command].Names[0]} command info`,
 								description: Description,
 								fields: Fields
-							}});
+							}]});
 							return;
 						}
 					}
@@ -75,10 +75,10 @@ module.exports = {
 				"value": Alfred.Commands[Category].Description
 			});
 		}
-		Message.channel.send({embed: {
+		Message.channel.send({embeds: [{
 			title: "Category list",
 			description: Description,
 			fields: Fields
-		}});
+		}]});
 	}
 };

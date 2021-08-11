@@ -21,6 +21,6 @@ module.exports = {
 			.addField("Developers", "<@644449298087411732>\n<@327757456673472523>", true)
 			.addField("Language", "Optimum Alfred Bot is written in Node.js / Discord.js.", true);
 
-		Message.channel.send(Embed);
+		Message.channel.send({ embeds: [ Embed ] });
 	}
 };

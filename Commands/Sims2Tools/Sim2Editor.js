@@ -24,9 +24,9 @@ module.exports = {
 					.setTitle("Sim2Editor - List of \"sub\" commands")
 					.setThumbnail("https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png")
 					.setColor("#447273")
-					.setDescription("-site: Sends a link to the Sim2Editor site.");
+					.setDescription("-site: Sends a link to the Sim2Editor site.\n-features: Sends a link to the Sim2Editor features page.");
 
-				Message.channel.send(Embed);
+				Message.channel.send({ embeds: [ Embed ]});
 
 			/* -site --> Send a link to the Sim2Editor site. */
 			} else if (CMD == "-site") {
@@ -36,7 +36,18 @@ module.exports = {
 					.setColor("#447273")
 					.setDescription("Find Sim2Editor's site [here](https://supersaiyajinstackz.github.io/Sim2Editor/).");
 
-				Message.channel.send(Embed);
+				Message.channel.send({ embeds: [ Embed ]});
+
+			/* -features --> Send a link to the Sim2Editor features page. */
+			} else if (CMD == "-features") {
+				const Embed = new Discord.MessageEmbed()
+					.setTitle("Sim2Editor - Features")
+					.setThumbnail("https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png")
+					.setColor("#447273")
+					.setDescription("Find Sim2Editor's features page [here](https://supersaiyajinstackz.github.io/Sim2Editor/features).");
+
+				Message.channel.send({ embeds: [ Embed ]});
+			
 			}
 		}
 	}

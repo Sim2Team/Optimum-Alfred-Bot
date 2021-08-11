@@ -407,7 +407,7 @@ module.exports = {
 				.setDescription("You haven't provided a name. Here is a list of all available cast members you can search.")
 				.addField("Cast Member List", CastMembers.map(r => r.en).join("\n"));
 
-			Message.channel.send(Embed);
+			Message.channel.send({ embeds: [ Embed ] });
 		} else {
 			let CastMember;
 
@@ -438,7 +438,7 @@ module.exports = {
 					.setColor("#343840")
 					.setThumbnail(CastMember.image)
 					.setDescription("Cast Member Information for " + CastMember.en + " " + CastMember.emoji)
-					.addField("ID", CastMember.id)
+					.addField("ID", CastMember.id.toString())
 					.addField("English", CastMember.en, true)
 					.addField("German", CastMember.de, true)
 					.addField("French", CastMember.fr, true)
@@ -449,9 +449,9 @@ module.exports = {
 					.addField("Biography (NDS)", CastMember.ndsbio, true)
 					.addField("Secret (GBA)", CastMember.gbasecret, true);
 			
-				Message.channel.send(Embed);
+				Message.channel.send({ embeds: [ Embed ] });
 			} else {
-				Message.channel.send("The cast member you provided doesn't exist!\nType \"?CastList\" or \"?CastMember\" without a command to get a list of all cast members.");
+				Message.channel.send("The cast member you provided doesn't exist!\nType \".CastList\" or \".CastMember\" without a command to get a list of all cast members.");
 			}
 		}
 	}
