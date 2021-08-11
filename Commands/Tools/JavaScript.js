@@ -4,7 +4,7 @@
 	Handle simple message commands, that may not fit anywhere else or so.
 */
 
-const Discord = require("discord.js");
+const {MessageAttachment, Formatters} = require("discord.js");
 
 /* Module: Simple Commands. */
 module.exports = {
@@ -22,12 +22,12 @@ module.exports = {
 				Output = Output.toString();
 
 			if (Output.length >= 1024) {
-				Message.channel.send("The output is too long, sending as attachment:", new Discord.MessageAttachment(Buffer.from(Output), "Output.txt"));
+				Message.channel.send("The output is too long, sending as attachment:", new MessageAttachment(Buffer.from(Output), "Output.txt"));
 			} else {
-				Message.channel.send(Output, {code: "js"});
+				Message.channel.send(Formatters.codeBlock("js", Output));
 			}
 		} catch(e) {
-			Message.channel.send(e.toString(), {code: "js"});
+			Message.channel.send(Formatters.codeBlock(e.toString()));
 		}
 	}
 };
