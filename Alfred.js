@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /*
 	Main Entry Point from Optimum Alfred.
 
