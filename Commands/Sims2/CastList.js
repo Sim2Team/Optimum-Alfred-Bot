@@ -450,6 +450,7 @@ module.exports = {
 					.addField("Secret (GBA)", CastMember.gbasecret, true);
 			
 				Message.channel.send({ embeds: [ Embed ] });
+				
 			} else {
 				Message.channel.send("The cast member you provided doesn't exist!\nType \".CastList\" or \".CastMember\" without a command to get a list of all cast members.");
 			}
