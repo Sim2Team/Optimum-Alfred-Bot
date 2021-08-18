@@ -12,24 +12,33 @@ const Categories = [
 	{
 		"Category": "GBA-Cast",
 		"URL": "GBA/Cast.cpp",
-		"Description": "Click on the Title above to be redirected to a C++ basic Game Boy Advance Cast Member Structure."
+		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Game Boy Advance - Cast Member Structure.",
+		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBACast.png"
 	},
 	{
 		"Category": "GBA-ItemPackage",
 		"URL": "GBA/ItemPackage.cpp",
-		"Description": "Click on the Title above to be redirected to a C++ basic Game Boy Advance Item Package Structure."
+		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Game Boy Advance - Item Package Structure.",
+		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAItem.png"
+	},
+	{
+		"Category": "GBA-HouseItem",
+		"URL": "GBA/HouseItem.cpp",
+		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Game Boy Advance - Cast Member Structure.",
+		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAHouseItem.png"
 	},
 	{
 		"Category": "NDS-Painting",
 		"URL": "NDS/Painting.cpp",
-		"Description": "Click on the Title above to be redirected to a C++ basic Nintendo DS Painting Structure."
+		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Nintendo DS - Painting Structure.",
+		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/NDSPainting.png"
 	}
 ];
 
 
 /* Module: Structures. */
 module.exports = {
-	Names: ["Structures"],
+	Names: ["Structures", "Struct"],
 	Usage: "[command]",
 	Description: "Links to some structure related things of the Sims2Research Repository.",
 	Handler(Message) {
@@ -51,8 +60,9 @@ module.exports = {
 			if (ResearchCategory) {
 				const Embed = new Discord.MessageEmbed()
 					.setTitle("Structures - " + ResearchCategory.Category)
-					.setURL(DefaultURL + ResearchCategory.URL)
 					.setColor("#447273")
+					.setThumbnail(ResearchCategory.Image)
+					.setURL(DefaultURL + ResearchCategory.URL)
 					.setDescription(ResearchCategory.Description);
 			
 				Message.channel.send({ embeds: [ Embed ] });
