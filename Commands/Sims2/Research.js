@@ -10,31 +10,37 @@ const DefaultURL = "https://github.com/SuperSaiyajinStackZ/Sims2Research/blob/ma
 
 const Categories = [
 	{
-		"Category": "GBA-Cast",
+		"Category": "GBA Cast",
 		"URL": "GBA/Cast.md",
 		"Description": "Click on the Title above to be redirected to some more details about The Sims 2 Game Boy Advance - Cast Members.",
 		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBACast.png"
 	},
 	{
-		"Category": "GBA-Item",
+		"Category": "GBA Item",
 		"URL": "GBA/Item.md",
 		"Description": "Click on the Title above to be redirected to an Item ID list, Item flags and the use counts for The Sims 2 Game Boy Advance.",
 		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAItem.png"
 	},
 	{
-		"Category": "GBA-HouseItem",
+		"Category": "GBA HouseItem",
 		"URL": "GBA/HouseItem.md",
 		"Description": "Click on the Title above to be redirected to some more details about The Sims 2 Game Boy Advance - House Items.",
 		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAHouseItem.png"
 	},
 	{
-		"Category": "GBA-ItemPackage",
+		"Category": "GBA Item Package",
 		"URL": "GBA/ItemPackage.md",
 		"Description": "Click on the Title above to be redirected to some more details about The Sims 2 Game Boy Advance - Item Packages.",
 		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAItem.png"
 	},
 	{
-		"Category": "NDS-Painting",
+		"Category": "GBA Social Move",
+		"URL": "GBA/SocialMove.md",
+		"Description": "Click on the Title above to be redirected to some more details about The Sims 2 Game Boy Advance - Social Moves.",
+		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBASocialMove.png"
+	},
+	{
+		"Category": "NDS Painting",
 		"URL": "NDS/Painting.md",
 		"Description": "Click on the Title above to be redirected to some more details about The Sims 2 Nintendo DS - Paintings.",
 		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/NDSPainting.png"

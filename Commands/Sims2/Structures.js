@@ -10,25 +10,31 @@ const DefaultURL = "https://github.com/SuperSaiyajinStackZ/Sims2Research/blob/ma
 
 const Categories = [
 	{
-		"Category": "GBA-Cast",
+		"Category": "GBA Cast",
 		"URL": "GBA/Cast.cpp",
 		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Game Boy Advance - Cast Member Structure.",
 		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBACast.png"
 	},
 	{
-		"Category": "GBA-ItemPackage",
+		"Category": "GBA Item Package",
 		"URL": "GBA/ItemPackage.cpp",
 		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Game Boy Advance - Item Package Structure.",
 		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAItem.png"
 	},
 	{
-		"Category": "GBA-HouseItem",
+		"Category": "GBA House Item",
 		"URL": "GBA/HouseItem.cpp",
 		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Game Boy Advance - Cast Member Structure.",
 		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAHouseItem.png"
 	},
 	{
-		"Category": "NDS-Painting",
+		"Category": "GBA Social Move",
+		"URL": "GBA/SocialMove.cpp",
+		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Game Boy Advance - Social Move Structure.",
+		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBASocialMove.png"
+	},
+	{
+		"Category": "NDS Painting",
 		"URL": "NDS/Painting.cpp",
 		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Nintendo DS - Painting Structure.",
 		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/NDSPainting.png"
