@@ -16,6 +16,12 @@ const Categories = [
 		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBACast.png"
 	},
 	{
+		"Category": "GBA Episode",
+		"URL": "GBA/Episode.cpp",
+		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Game Boy Advance - Episode Structure.",
+		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAEpisode.png"
+	},
+	{
 		"Category": "GBA Item Package",
 		"URL": "GBA/ItemPackage.cpp",
 		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Game Boy Advance - Item Package Structure.",

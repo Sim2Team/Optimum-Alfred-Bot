@@ -16,6 +16,12 @@ const Categories = [
 		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBACast.png"
 	},
 	{
+		"Category": "GBA Episode",
+		"URL": "GBA/Episode.md",
+		"Description": "Click on the Title above to be redirected to some more details about The Sims 2 Game Boy Advance - Episodes.",
+		"Image": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAEpisode.png"
+	},
+	{
 		"Category": "GBA Item",
 		"URL": "GBA/Item.md",
 		"Description": "Click on the Title above to be redirected to an Item ID list, Item flags and the use counts for The Sims 2 Game Boy Advance.",
