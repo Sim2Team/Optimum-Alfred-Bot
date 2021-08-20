@@ -17,7 +17,6 @@ module.exports = {
 			.setThumbnail("https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Cast/18.png")
 			.setDescription("About Optimum-Alfred-Bot")
 			.addField("Source Code", "[Optimum Alfred Source Code](https://github.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot)", true)
-			.addField("Website", "[Strangetown Website Section](https://supersaiyajinstackz.github.io/strangetown)", true)
 			.addField("Developers", "<@644449298087411732>\n<@327757456673472523>", true)
 			.addField("Language", "Optimum Alfred Bot is written in Node.js / Discord.js.", true);
 
