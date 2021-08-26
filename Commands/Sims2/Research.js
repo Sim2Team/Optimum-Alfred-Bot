@@ -1,12 +1,12 @@
 /*
 	Optimum Alfred's The Sims 2 Game Boy Advance / Nintendo DS Research links Handler implementation.
 
-	Links to some research related things of the Sims2Research Repository.
+	Links to some research related things of the Sim2Research Repository.
 */
 
 const Discord = require("discord.js");
 
-const DefaultURL = "https://github.com/SuperSaiyajinStackZ/Sims2Research/blob/main/Research/";
+const DefaultURL = "https://github.com/SuperSaiyajinStackZ/Sim2Research/blob/main/Research/";
 
 const Categories = [
 	{
@@ -58,7 +58,7 @@ const Categories = [
 module.exports = {
 	Names: ["Research"],
 	Usage: "[command]",
-	Description: "Links to some research related things of the Sims2Research Repository.",
+	Description: "Links to some research related things of the Sim2Research Repository.",
 	Handler(Message) {
 		const _Category = Message.Value; // Save the argument to a variable for more efficiency.
 		

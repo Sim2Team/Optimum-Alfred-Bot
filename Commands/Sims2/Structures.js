@@ -1,12 +1,12 @@
 /*
 	Optimum Alfred's The Sims 2 Game Boy Advance / Nintendo DS Structures links Handler implementation.
 
-	Links to some structure related things of the Sims2Research Repository.
+	Links to some structure related things of the Sim2Research Repository.
 */
 
 const Discord = require("discord.js");
 
-const DefaultURL = "https://github.com/SuperSaiyajinStackZ/Sims2Research/blob/main/Structures/";
+const DefaultURL = "https://github.com/SuperSaiyajinStackZ/Sim2Research/blob/main/Structures/";
 
 const Categories = [
 	{
@@ -52,7 +52,7 @@ const Categories = [
 module.exports = {
 	Names: ["Structures", "Struct"],
 	Usage: "[command]",
-	Description: "Links to some structure related things of the Sims2Research Repository.",
+	Description: "Links to some structure related things of the Sim2Research Repository.",
 	Handler(Message) {
 		const _Category = Message.Value; // Save the argument to a variable for more efficiency.
 		
