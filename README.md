@@ -6,10 +6,10 @@ Optimum-Alfred-Bot is a discord bot written in Node.js / Discord.js for the [Uni
 If you are not sure what game it is, here are covers from both games:
 
 ### The Sims 2 Game Boy Advance
-![GBACover](https://github.com/Sim2Team/Alfred-Optimum-Bot/blob/main/resources/GBACover.png)
+![GBACover](https://github.com/Sim2Team/Optimum-Alfred-Bot/blob/main/resources/GBACover.png)
 
 ### The Sims 2 Nintendo DS
-![NDSCover](https://github.com/Sim2Team/Alfred-Optimum-Bot/blob/main/resources/NDSCover.png)
+![NDSCover](https://github.com/Sim2Team/Optimum-Alfred-Bot/blob/main/resources/NDSCover.png)
 
 
 ## Features
