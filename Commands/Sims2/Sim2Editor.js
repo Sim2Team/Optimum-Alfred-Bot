@@ -22,7 +22,7 @@ module.exports = {
 			if (CMD == "-h" || CMD == "-help") {
 				const Embed = new Discord.MessageEmbed()
 					.setTitle("Sim2Editor - List of \"sub\" commands")
-					.setThumbnail("https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png")
+					.setThumbnail("https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png")
 					.setColor("#447273")
 					.setDescription("-site: Sends a link to the Sim2Editor site.\n-features: Sends a link to the Sim2Editor features page.\n-supported: Send which games and regions are supported.");
 
@@ -32,10 +32,10 @@ module.exports = {
 			} else if (CMD == "-site") {
 				const Embed = new Discord.MessageEmbed()
 					.setTitle("Sim2Editor - Site")
-					.setThumbnail("https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png")
-					.setURL("https://supersaiyajinstackz.github.io/Sim2Editor/")
+					.setThumbnail("https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png")
+					.setURL("https://sim2team.github.io/Sim2Editor/")
 					.setColor("#447273")
-					.setDescription("Find Sim2Editor's site [here](https://supersaiyajinstackz.github.io/Sim2Editor/).");
+					.setDescription("Find Sim2Editor's site [here](https://sim2team.github.io/Sim2Editor/).");
 
 				Message.channel.send({ embeds: [ Embed ]});
 
@@ -43,19 +43,19 @@ module.exports = {
 			} else if (CMD == "-features") {
 				const Embed = new Discord.MessageEmbed()
 					.setTitle("Sim2Editor - Features")
-					.setThumbnail("https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png")
-					.setURL("https://supersaiyajinstackz.github.io/Sim2Editor/features")
+					.setThumbnail("https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png")
+					.setURL("https://sim2team.github.io/Sim2Editor/features")
 					.setColor("#447273")
-					.setDescription("Find Sim2Editor's features page [here](https://supersaiyajinstackz.github.io/Sim2Editor/features).");
+					.setDescription("Find Sim2Editor's features page [here](https://sim2team.github.io/Sim2Editor/features).");
 
 				Message.channel.send({ embeds: [ Embed ]});
 			
 			} else if (CMD == "-supported") {
 				const Embed = new Discord.MessageEmbed()
 					.setTitle("Sim2Editor - Supported Games")
-					.setImage("https://github.com/SuperSaiyajinStackZ/Sim2Editor/raw/main/assets/images/ndsCover.png")
-					.setThumbnail("https://raw.githubusercontent.com/SuperSaiyajinStackZ/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png")
-					.setURL("https://supersaiyajinstackz.github.io/Sim2Editor/")
+					.setImage("https://github.com/Sim2Team/Sim2Editor/raw/main/assets/images/ndsCover.png")
+					.setThumbnail("https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png")
+					.setURL("https://sim2team.github.io/Sim2Editor/")
 					.setColor("#447273")
 					.setDescription("You can see which games are supported including the regions below.")
 					.addField("Game Boy Advance", "- Europe\n- USA")

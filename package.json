@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node Alfred.js"
   },
-  "author": "Pk11, SuperSaiyajinStackZ",
+  "author": "Sim2Team",
   "license": "GPLv3",
   "dependencies": {
     "discord.js": "^13.0.1",

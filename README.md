@@ -2,16 +2,14 @@
 
 Optimum-Alfred-Bot is a discord bot written in Node.js / Discord.js for the [Universal-Server](https://universal-team.net/discord).
 
-The discord server is for fans of `The Sims 2` for the Game Boy Advance and the Nintendo DS. For more information, Check the [Strangetown](https://supersaiyajinstackz.github.io/strangetown) section of my website.
-
 
 If you are not sure what game it is, here are covers from both games:
 
 ### The Sims 2 Game Boy Advance
-![GBACover](https://github.com/SuperSaiyajinStackZ/Alfred-Optimum-Bot/blob/main/resources/GBACover.png)
+![GBACover](https://github.com/Sim2Team/Alfred-Optimum-Bot/blob/main/resources/GBACover.png)
 
 ### The Sims 2 Nintendo DS
-![NDSCover](https://github.com/SuperSaiyajinStackZ/Alfred-Optimum-Bot/blob/main/resources/NDSCover.png)
+![NDSCover](https://github.com/Sim2Team/Alfred-Optimum-Bot/blob/main/resources/NDSCover.png)
 
 
 ## Features
@@ -22,7 +20,7 @@ Optimum-Alfred-Bot has the following features as of the latest commit:
 - [x] `Help [category] [command]` - Shows a list of categories, commands, or info about a command.
 - [x] `JavaScript <JavaScript Code>` / `JS <JavaScript Code>` - Runs JavaScript code. Only usable for developers.
 - [x] `Reload <Command>` - Reloads a command. Only usable for developers.
-- [x] `Sim2Editor [command]` / `S2Editor [command]` - Some commands related to [Sim2Editor](https://supersaiyajinstackz.github.io/Sim2Editor/).
+- [x] `Sim2Editor [command]` / `S2Editor [command]` - Some commands related to [Sim2Editor](https://sim2team.github.io/Sim2Editor/).
 - [x] `Structures [command]` / `Struct [command]` - Links to some structure related things of the Sim2Research Repository.
 - [x] `Research [command]` - Links to some research related things of the Sim2Research Repository.
 
