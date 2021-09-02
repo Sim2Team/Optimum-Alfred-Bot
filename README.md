@@ -1,6 +1,6 @@
 # Optimum-Alfred-Bot
 
-Optimum-Alfred-Bot is a discord bot written in Node.js / Discord.js for the [Universal-Server](https://universal-team.net/discord).
+Optimum-Alfred-Bot is a discord bot written in Node.js / Discord.js for the [Sim2Server](https://discord.gg/dqfrTaerB6).
 
 
 If you are not sure what game it is, here are covers from both games:
