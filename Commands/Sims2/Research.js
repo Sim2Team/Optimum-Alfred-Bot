@@ -22,22 +22,34 @@ const Categories = [
 		"Image": "https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAEpisode.png"
 	},
 	{
-		"Category": "GBA Item",
-		"URL": "GBA/Item.md",
-		"Description": "Click on the Title above to be redirected to an Item ID list, Item flags and the use counts for The Sims 2 Game Boy Advance.",
-		"Image": "https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAItem.png"
-	},
-	{
 		"Category": "GBA HouseItem",
 		"URL": "GBA/HouseItem.md",
 		"Description": "Click on the Title above to be redirected to some more details about The Sims 2 Game Boy Advance - House Items.",
 		"Image": "https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAHouseItem.png"
 	},
 	{
+		"Category": "GBA Item",
+		"URL": "GBA/Item.md",
+		"Description": "Click on the Title above to be redirected to an Item ID list, Item flags and the use counts for The Sims 2 Game Boy Advance.",
+		"Image": "https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAItem.png"
+	},
+	{
 		"Category": "GBA Item Package",
 		"URL": "GBA/ItemPackage.md",
 		"Description": "Click on the Title above to be redirected to some more details about The Sims 2 Game Boy Advance - Item Packages.",
 		"Image": "https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAItem.png"
+	},
+	{
+		"Category": "GBA Meta",
+		"URL": "GBA/Meta.md",
+		"Description": "Click on the Title above to be redirected to some more details about The Sims 2 Game Boy Advance - Meta.",
+		"Image": "https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png"
+	},
+	{
+		"Category": "GBA Meta Header",
+		"URL": "GBA/MetaHeader.md",
+		"Description": "Click on the Title above to be redirected to some more details about The Sims 2 Game Boy Advance - Meta Header.",
+		"Image": "https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png"
 	},
 	{
 		"Category": "GBA Social Move",

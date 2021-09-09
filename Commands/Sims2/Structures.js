@@ -22,22 +22,34 @@ const Categories = [
 		"Image": "https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAEpisode.png"
 	},
 	{
-		"Category": "GBA Item Package",
-		"URL": "GBA/ItemPackage.cpp",
-		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Game Boy Advance - Item Package Structure.",
-		"Image": "https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAItem.png"
-	},
-	{
 		"Category": "GBA House Item",
 		"URL": "GBA/HouseItem.cpp",
 		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Game Boy Advance - Cast Member Structure.",
 		"Image": "https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAHouseItem.png"
 	},
 	{
+		"Category": "GBA Item Package",
+		"URL": "GBA/ItemPackage.cpp",
+		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Game Boy Advance - Item Package Structure.",
+		"Image": "https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBAItem.png"
+	},
+	{
 		"Category": "GBA Social Move",
 		"URL": "GBA/SocialMove.cpp",
 		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Game Boy Advance - Social Move Structure.",
 		"Image": "https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Research/GBASocialMove.png"
+	},
+	{
+		"Category": "GBA Meta",
+		"URL": "GBA/Meta.cpp",
+		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Game Boy Advance - Meta Structure.",
+		"Image": "https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png"
+	},
+	{
+		"Category": "GBA Meta Header",
+		"URL": "GBA/MetaHeader.cpp",
+		"Description": "Click on the Title above to be redirected to a C++ basic The Sims 2 Game Boy Advance - Meta Header Structure.",
+		"Image": "https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png"
 	},
 	{
 		"Category": "NDS Painting",
