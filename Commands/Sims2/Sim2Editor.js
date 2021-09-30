@@ -53,13 +53,12 @@ module.exports = {
 			} else if (CMD == "-supported") {
 				const Embed = new Discord.MessageEmbed()
 					.setTitle("Sim2Editor - Supported Games")
-					.setImage("https://github.com/Sim2Team/Sim2Editor/raw/main/assets/images/ndsCover.png")
 					.setThumbnail("https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png")
 					.setURL("https://sim2team.github.io/Sim2Editor/")
 					.setColor("#447273")
 					.setDescription("You can see which games are supported including the regions below.")
-					.addField("Game Boy Advance", "- Europe\n- USA")
-					.addField("Nintendo DS", "- Europe\n- USA\n- Japanese");
+					.addField("The Sims 2 (GBA)", "- EUR\n- USA")
+					.addField("The Sims 2 (NDS)", "- EUR\n- USA\n- JPN");
 
 				Message.channel.send({ embeds: [ Embed ]});
 			}

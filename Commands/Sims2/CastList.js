@@ -393,7 +393,7 @@ const CastMembers = [
 
 /* Module: Cast List. */
 module.exports = {
-	Names: ["CastList", "CastMember"],
+	Names: ["S2CastList", "S2CastMember"],
 	Usage: "[command]",
 	Description: "Displays information about the cast members from The Sims 2 Game Boy Advance and Nintendo DS. You can search by the English, German, French, Spanish, Italian and Dutch names, but also from their ID's in hexadecimal and decimal. If no cast member provided, it displays a list of all cast members. You can also use \"-r\" as the command to choose a random cast member.",
 	Handler(Message) {
@@ -402,7 +402,7 @@ module.exports = {
 		/* Send an embed with all english cast names listed, if no name provided. */
 		if (Name.length < 1) {
 			const Embed = new Discord.MessageEmbed()
-				.setTitle("Cast List - You haven't provided a name!")
+				.setTitle("Sims 2 Cast List - You haven't provided a name!")
 				.setColor("#343840")
 				.setDescription("You haven't provided a name. Here is a list of all available cast members you can search.")
 				.addField("Cast Member List", CastMembers.map(r => r.en).join("\n"));
@@ -452,7 +452,7 @@ module.exports = {
 				Message.channel.send({ embeds: [ Embed ] });
 				
 			} else {
-				Message.channel.send("The cast member you provided doesn't exist!\nType \".CastList\" or \".CastMember\" without a command to get a list of all cast members.");
+				Message.channel.send("The cast member you provided doesn't exist!\nType \".S2CastList\" or \".S2CastMember\" without a command to get a list of all cast members.");
 			}
 		}
 	}

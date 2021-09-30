@@ -68,7 +68,7 @@ const Categories = [
 
 /* Module: Research. */
 module.exports = {
-	Names: ["Research"],
+	Names: ["S2Research"],
 	Usage: "[command]",
 	Description: "Links to some research related things of the Sim2Research Repository.",
 	Handler(Message) {
@@ -76,7 +76,7 @@ module.exports = {
 		
 		if (_Category.length < 1) {
 			const Embed = new Discord.MessageEmbed()
-				.setTitle("Research - You haven't provided a category!")
+				.setTitle("Sims 2 Research - You haven't provided a category!")
 				.setColor("#343840")
 				.setDescription("You haven't provided a category. Here is a list of all available categories you can search.")
 				.addField("Category List", Categories.map(r => r.Category).join("\n"));
@@ -89,7 +89,7 @@ module.exports = {
 
 			if (ResearchCategory) {
 				const Embed = new Discord.MessageEmbed()
-					.setTitle("Research - " + ResearchCategory.Category)
+					.setTitle("Sims 2 Research - " + ResearchCategory.Category)
 					.setColor("#447273")
 					.setThumbnail(ResearchCategory.Image)
 					.setURL(DefaultURL + ResearchCategory.URL)
