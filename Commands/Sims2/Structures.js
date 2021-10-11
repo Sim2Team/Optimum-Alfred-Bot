@@ -5,7 +5,6 @@
 */
 
 const Discord = require("discord.js");
-
 const DefaultURL = "https://github.com/Sim2Team/Sim2Research/blob/main/Structures/";
 
 const Categories = [

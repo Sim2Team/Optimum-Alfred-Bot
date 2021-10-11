@@ -16,6 +16,10 @@ Optimum-Alfred-Bot has the following features as of the latest commit:
 - [x] `JavaScript <JavaScript Code>` / `JS <JavaScript Code>` - Runs JavaScript code. Only usable for developers.
 - [x] `Reload <Command>` - Reloads a command. Only usable for developers.
 
+**Commands related to Sim2Team.**
+
+- [x] `Sim2Wiki [content]` / `S2Wiki [content]` - Links to some things from the Sim2Team wiki site. For the best results, search by the actual site path starting at [https://sim2team.github.io/wiki/](https://sim2team.github.io/wiki/) instead of keywords.
+
 ### The Sims 2 Commands
 
 **Commands related to The Sims 2.**
