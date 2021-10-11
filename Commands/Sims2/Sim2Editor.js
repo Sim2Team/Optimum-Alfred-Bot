@@ -23,6 +23,7 @@ module.exports = {
 				const Embed = new Discord.MessageEmbed()
 					.setTitle("Sim2Editor - List of \"sub\" commands")
 					.setThumbnail("https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png")
+					.setURL("https://sim2team.github.io/sim2editor/")
 					.setColor("#447273")
 					.setDescription("-site: Sends a link to the Sim2Editor site.\n-features: Sends a link to the Sim2Editor features page.\n-supported: Send which games and regions are supported.");
 
@@ -33,9 +34,9 @@ module.exports = {
 				const Embed = new Discord.MessageEmbed()
 					.setTitle("Sim2Editor - Site")
 					.setThumbnail("https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png")
-					.setURL("https://sim2team.github.io/Sim2Editor/")
+					.setURL("https://sim2team.github.io/sim2editor/")
 					.setColor("#447273")
-					.setDescription("Find Sim2Editor's site [here](https://sim2team.github.io/Sim2Editor/).");
+					.setDescription("Find Sim2Editor's site [here](https://sim2team.github.io/sim2editor/).");
 
 				Message.channel.send({ embeds: [ Embed ]});
 
@@ -44,9 +45,9 @@ module.exports = {
 				const Embed = new Discord.MessageEmbed()
 					.setTitle("Sim2Editor - Features")
 					.setThumbnail("https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png")
-					.setURL("https://sim2team.github.io/Sim2Editor/features")
+					.setURL("https://sim2team.github.io/sim2editor/features")
 					.setColor("#447273")
-					.setDescription("Find Sim2Editor's features page [here](https://sim2team.github.io/Sim2Editor/features).");
+					.setDescription("Find Sim2Editor's features page [here](https://sim2team.github.io/sim2editor/features).");
 
 				Message.channel.send({ embeds: [ Embed ]});
 			
@@ -54,7 +55,7 @@ module.exports = {
 				const Embed = new Discord.MessageEmbed()
 					.setTitle("Sim2Editor - Supported Games")
 					.setThumbnail("https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sims2/Sim2Editor.png")
-					.setURL("https://sim2team.github.io/Sim2Editor/")
+					.setURL("https://sim2team.github.io/sim2editor/")
 					.setColor("#447273")
 					.setDescription("You can see which games are supported including the regions below.")
 					.addField("The Sims 2 (GBA)", "- EUR\n- USA")

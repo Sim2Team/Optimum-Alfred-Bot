@@ -24,7 +24,7 @@ Optimum-Alfred-Bot has the following features as of the latest commit:
 
 **Commands related to The Sims 2.**
 
-- [x] `Sim2Editor [command]` / `S2Editor [command]` - Some commands related to [Sim2Editor](https://sim2team.github.io/Sim2Editor/).
+- [x] `Sim2Editor [command]` / `S2Editor [command]` - Some commands related to [Sim2Editor](https://sim2team.github.io/sim2editor/).
 - [x] `S2CastList [command]` / `S2CastMember [command]` - Displays information about the cast members from The Sims 2 Game Boy Advance and Nintendo DS.
 - [x] `S2Research [command]` - Links to some research related things of the Sim2Research Repository.
 - [x] `S2Structures [command]` / `S2Struct [command]` - Links to some structure related things of the Sim2Research Repository.
