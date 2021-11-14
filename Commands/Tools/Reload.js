@@ -10,11 +10,11 @@ module.exports = {
 	Description: "Reloads a command.",
 	Dev: true,
 	Handler(Message, Alfred) {
-		if (!Message.Value)
-			return Message.channel.send("Please provide a command to reload.");
+		if (!Message.Value) return Message.channel.send("Please provide a command to reload.");
 
 		for (let Category in Alfred.Commands) {
 			const Commands = Alfred.Commands[Category].Commands;
+
 			for (let Command in Commands) {
 				for (let Name of Commands[Command].Names) {
 					if (Name.toLowerCase() == Message.Value.toLowerCase()) {
@@ -30,4 +30,4 @@ module.exports = {
 
 		Message.channel.send("Command could not be found!");
 	}
-}
+};

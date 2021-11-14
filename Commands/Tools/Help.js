@@ -18,7 +18,8 @@ module.exports = {
 	
 				/* Command List. */
 				if (Category.toLowerCase().includes(Message.Value.toLowerCase())) {
-					let Fields = [];
+					let Fields = [ ];
+
 					for (let Command in Commands) {
 						Fields.push({
 							name: Commands[Command].Names[0],
@@ -31,6 +32,7 @@ module.exports = {
 						description: Description,
 						fields: Fields
 					}]});
+
 					return;
 				}
 	
@@ -48,6 +50,7 @@ module.exports = {
 									value: Alfred.Config.Prefix + Commands[Command].Names[0] + (Commands[Command].Usage ? ` ${Commands[Command].Usage}` : "")
 								}
 							];
+
 							if (Commands[Command].Names.length > 1) {
 								Fields.push({
 									name: "Other names",
@@ -60,6 +63,7 @@ module.exports = {
 								description: Description,
 								fields: Fields
 							}]});
+
 							return;
 						}
 					}
@@ -68,13 +72,15 @@ module.exports = {
 		}
 
 		/* Category List. */
-		let Fields = [];
+		let Fields = [ ];
+
 		for (let Category in Alfred.Commands) {
 			Fields.push({
 				"name": Category,
 				"value": Alfred.Commands[Category].Description
 			});
 		}
+
 		Message.channel.send({embeds: [{
 			title: "Category list",
 			description: Description,

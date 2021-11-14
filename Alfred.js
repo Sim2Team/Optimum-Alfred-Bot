@@ -11,7 +11,7 @@
 		- Prefix: The prefix the bot should use the commands with.
 */
 
-const {Client, Intents} = require("discord.js");
+const { Client, Intents } = require("discord.js");
 const fs = require("fs");
 require("dotenv").config();
 
@@ -26,7 +26,7 @@ const Alfred = {
 
 for (let Category of fs.readdirSync("Commands")) {
 	Alfred.Commands[Category] = {
-		Commands: {},
+		Commands: { },
 		Description: fs.existsSync(`Commands/${Category}/Description.txt`) ? fs.readFileSync(`Commands/${Category}/Description.txt`).toString().trim() : ""
 	};
 
@@ -40,14 +40,14 @@ console.log("Initializing the Bot...");
 /* Tell us, as what we logged in. */
 Alfred.Client.on("ready", () => {
 	console.log("Logged in as: " + Alfred.Client.user.tag + ".");
-	Alfred.Client.user.setActivity("Helping out in Sim2Server | .help");
+	Alfred.Client.user.setActivity("Helping out in the Sim2Server | .help");
 });
 
 /* Handle message commands. */
 Alfred.Client.on("messageCreate", Message => {
-	if (Message.member?.user.bot) return; // Ensure it's not a bot.
-	if (!Message.content.startsWith(Alfred.Config.Prefix)) return; // Ensure it has the bot prefix.
-	if (!Alfred.Config.Channels.includes(Message.channel.id)) return; // Ensure it's in a bot channel.
+	if (Message.member?.user.bot) return; // Ensure it's not a bot that wants to use a command.
+	if (!Message.content.startsWith(Alfred.Config.Prefix)) return; // Ensure it has the defined bot prefix.
+	if (!Alfred.Config.Channels.includes(Message.channel.id)) return; // Ensure it's in one of the defined bot channels.
 
 	let Match = Message.content.match(RegExp(Alfred.Config.Prefix.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&") + "\\s*([^\\s]+)\\s*(.*)", "si"));
 	if (Match.length < 2) return;
@@ -60,12 +60,15 @@ Alfred.Client.on("messageCreate", Message => {
 			for (let Name of Commands[Command].Names) {
 				if (Name.toLowerCase() == Message.Command.toLowerCase()) {
 					console.log(`[${(new Date).toLocaleTimeString()}] ${Message.member.user.tag} just executed the command '${Message.Command}'.`);
+
 					if (!Commands[Command].Dev || Alfred.Config.Developers.includes(Message.member.id)) {
 						try {
 							Commands[Command].Handler(Message, Alfred);
+
 						} catch(e) {
 							Message.channel.send("An error occurred while executing that command:\n```js\n" + e + "```");
 						}
+
 					} else {
 						Message.channel.send("Bot developer permissions is required to run this command!");
 					}

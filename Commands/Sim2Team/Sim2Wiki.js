@@ -69,15 +69,15 @@ const Content = [
 		"Title": "The Sims 2 (GBA) Episode",
 		"URL": "research/sims2gba/episode"
 	},
+	{ // Re-ranged it there, so searching for "Item" actually shows this instead of House Item.
+		"Desc": "The Sims 2 Game Boy Advance | Item Research",
+		"Title": "The Sims 2 (GBA) Item",
+		"URL": "research/sims2gba/item"
+	},
 	{
 		"Desc": "The Sims 2 Game Boy Advance | House Item Research",
 		"Title": "The Sims 2 (GBA) House Item",
 		"URL": "research/sims2gba/houseitem"
-	},
-	{
-		"Desc": "The Sims 2 Game Boy Advance | Item Research",
-		"Title": "The Sims 2 (GBA) Item",
-		"URL": "research/sims2gba/item"
 	},
 	{
 		"Desc": "The Sims 2 Game Boy Advance | Item Package Research",
@@ -119,7 +119,7 @@ module.exports = {
 	Usage: "[command]",
 	Description: "Links to some things from the Sim2Team wiki site. For the best results, search by the actual site path starting at https://sim2team.github.io/wiki/ instead of keywords.",
 	Handler(Message) {
-		const _Content = Message.Value; // Save the argument to a variable for more efficiency.
+		const _Content = Message.Value.toLowerCase(); // Save the argument to a variable for more efficiency.
 		
 		if (_Content.length < 1) {
 			const Embed = new Discord.MessageEmbed()
@@ -132,9 +132,8 @@ module.exports = {
 			Message.channel.send({ embeds: [ Embed ] });
 
 		} else {
-			let contentLower = _Content.toLowerCase();
-			let Cnt = Content.filter(r => r.URL.toLowerCase().includes(contentLower)
-				|| r.Title.toLowerCase().includes(contentLower))?.[0]; // url path has prio than title to not mess that up.
+			let Cnt = Content.filter(r => r.URL.includes(_Content)
+				|| r.Title.toLowerCase().includes(_Content))?.[0]; // url path has prio than title to not mess that up.
 
 			if (Cnt) {
 				const Embed = new Discord.MessageEmbed()

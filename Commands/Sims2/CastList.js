@@ -397,7 +397,7 @@ module.exports = {
 	Usage: "[command]",
 	Description: "Displays information about the cast members from The Sims 2 Game Boy Advance and Nintendo DS. You can search by the English, German, French, Spanish, Italian and Dutch names, but also from their ID's in hexadecimal and decimal. If no cast member provided, it displays a list of all cast members. You can also use \"-r\" as the command to choose a random cast member.",
 	Handler(Message) {
-		const Name = Message.Value; // Save the argument to a variable for more efficiency.
+		const Name = Message.Value.toLowerCase(); // Save the argument to a variable for more efficiency.
 		
 		/* Send an embed with all english cast names listed, if no name provided. */
 		if (Name.length < 1) {
@@ -408,27 +408,28 @@ module.exports = {
 				.addField("Cast Member List", CastMembers.map(r => r.en).join("\n"));
 
 			Message.channel.send({ embeds: [ Embed ] });
+
 		} else {
 			let CastMember;
 
 			/* Select a cast randomly. */
-			if (Name == "-r") CastMember = CastMembers[Math.floor(Math.random() * 26)];
+			if (Name == "-r" || Name == "-random") CastMember = CastMembers[Math.floor(Math.random() * 26)];
 			/* Here with the cast search. */
 			else {
-				let Id = parseInt(Name);
+				let ID = parseInt(Name);
 
 				/* The provided thing is not an ID, so search by all language names. */
-				if (isNaN(Id)) {
-					let nameLower = Name.toLowerCase();
-					CastMember = CastMembers.filter(r => r.en.toLowerCase().includes(nameLower)
-							|| r.de.toLowerCase().includes(nameLower)
-							|| r.fr.toLowerCase().includes(nameLower)
-							|| r.es.toLowerCase().includes(nameLower)
-							|| r.it.toLowerCase().includes(nameLower)
-							|| r.nl.toLowerCase().includes(nameLower)
-							|| r.emoji.toLowerCase().includes(nameLower))?.[0];
+				if (isNaN(ID)) {
+					CastMember = CastMembers.filter(r => r.en.toLowerCase().includes(Name)
+							|| r.de.toLowerCase().includes(Name)
+							|| r.fr.toLowerCase().includes(Name)
+							|| r.es.toLowerCase().includes(Name)
+							|| r.it.toLowerCase().includes(Name)
+							|| r.nl.toLowerCase().includes(Name)
+							|| r.emoji.toLowerCase().includes(Name))?.[0];
+
 				} else {
-					CastMember = CastMembers.filter(r => r.id == Id)?.[0];
+					CastMember = CastMembers.filter(r => r.id == ID)?.[0];
 				}
 			}
 			
