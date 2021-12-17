@@ -29,8 +29,8 @@ Optimum-Alfred-Bot has the following features as of the latest commit:
 **Commands related to The Sims 2.**
 
 - [x] `S2CastList [command]` / `S2CastMember [command]` - Displays information about the cast members from The Sims 2 Game Boy Advance and Nintendo DS.
-- [] `S2Research [command]` - Links to some research related things of the Sim2Research Repository. (This command has been deleted. Use `.Sim2Wiki` for this command instead).
-- [] `S2Structures [command]` / `S2Struct [command]` - Links to some structure related things of the Sim2Research Repository. (This command has been deleted. Use `.Sim2Wiki` for this command instead).
+- [ ] `S2Research [command]` - Links to some research related things of the Sim2Research Repository. (This command has been deleted. Use `.Sim2Wiki` for this command instead).
+- [ ] `S2Structures [command]` / `S2Struct [command]` - Links to some structure related things of the Sim2Research Repository. (This command has been deleted. Use `.Sim2Wiki` for this command instead).
 
 
 ## Credits

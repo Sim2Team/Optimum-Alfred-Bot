@@ -34,40 +34,60 @@ const Content = [
 
 	/* Bustin' Out related. */
 	{
-		"Desc": "Save Information for The Sims Bustin' Out (GBA)",
-		"Title": "Bustin' Out Saveinfo",
+		"Desc": "General Information for The Sims Bustin' Out (GBA).",
+		"Title": "Bustin' Out Generalinfo",
 		"URL": "research/bustinout"
+	},
+	{
+		"Desc": "Save Information for The Sims Bustin' Out (GBA).",
+		"Title": "Bustin' Out Saveinfo",
+		"URL": "research/bustinout/savefile"
 	},
 
 	/* The Urbz (GBA) related. */
 	{
-		"Desc": "Save Information for The Urbz - Sims in the City (GBA)",
-		"Title": "The Urbz (GBA) Saveinfo",
+		"Desc": "General Information for The Urbz - Sims in the City (GBA).",
+		"Title": "The Urbz (GBA) Generalinfo",
 		"URL": "research/urbzgba"
+	},
+	{
+		"Desc": "Save Information for The Urbz - Sims in the City (GBA).",
+		"Title": "The Urbz (GBA) Saveinfo",
+		"URL": "research/urbzgba/savefile"
 	},
 
 	/* The Urbz (NDS) related. */
 	{
-		"Desc": "Save Information for The Urbz - Sims in the City (NDS)",
-		"Title": "The Urbz (NDS) Saveinfo",
+		"Desc": "General Information for The Urbz - Sims in the City (NDS).",
+		"Title": "The Urbz (NDS) Generalinfo",
 		"URL": "research/urbznds"
+	},
+	{
+		"Desc": "Save Information for The Urbz - Sims in the City (NDS).",
+		"Title": "The Urbz (NDS) Saveinfo",
+		"URL": "research/urbznds/savefile"
 	},
 
 	/* The Sims 2 (GBA) related. */
 	{
-		"Desc": "Save Information for The Sims 2 (GBA)",
-		"Title": "The Sims 2 (GBA) Saveinfo",
+		"Desc": "General Information for The Sims 2 (GBA).",
+		"Title": "The Sims 2 (GBA) Generalinfo",
 		"URL": "research/sims2gba"
+	},
+	{
+		"Desc": "Save Information for The Sims 2 (GBA).",
+		"Title": "The Sims 2 (GBA) Saveinfo",
+		"URL": "research/sims2gba/savefile"
 	},
 	{
 		"Desc": "The Sims 2 Game Boy Advance | Cast Member Research",
 		"Title": "The Sims 2 (GBA) Cast Member",
-		"URL": "research/sims2gba/castmember"
+		"URL": "research/sims2gba/savefile/castmember"
 	},
 	{
 		"Desc": "The Sims 2 Game Boy Advance | Episode Research",
 		"Title": "The Sims 2 (GBA) Episode",
-		"URL": "research/sims2gba/episode"
+		"URL": "research/sims2gba/savefile/episode"
 	},
 	{ // Re-ranged it there, so searching for "Item" actually shows this instead of House Item.
 		"Desc": "The Sims 2 Game Boy Advance | Item Research",
@@ -77,39 +97,44 @@ const Content = [
 	{
 		"Desc": "The Sims 2 Game Boy Advance | House Item Research",
 		"Title": "The Sims 2 (GBA) House Item",
-		"URL": "research/sims2gba/houseitem"
+		"URL": "research/sims2gba/savefile/houseitem"
 	},
 	{
 		"Desc": "The Sims 2 Game Boy Advance | Item Package Research",
 		"Title": "The Sims 2 (GBA) Item Package",
-		"URL": "research/sims2gba/itempackage"
+		"URL": "research/sims2gba/savefile/itempackage"
 	},
 	{
 		"Desc": "The Sims 2 Game Boy Advance | Meta Research",
 		"Title": "The Sims 2 (GBA) Meta",
-		"URL": "research/sims2gba/meta"
+		"URL": "research/sims2gba/savefile/meta"
 	},
 	{
 		"Desc": "The Sims 2 Game Boy Advance | Meta Header Research",
 		"Title": "The Sims 2 (GBA) Meta Header",
-		"URL": "research/sims2gba/metaheader"
+		"URL": "research/sims2gba/savefile/metaheader"
 	},
 	{
 		"Desc": "The Sims 2 Game Boy Advance | Social Move Research",
 		"Title": "The Sims 2 (GBA) Social Move",
-		"URL": "research/sims2gba/socialmove"
+		"URL": "research/sims2gba/savefile/socialmove"
 	},
 
 	/* The Sims 2 (NDS) related. */
 	{
+		"Desc": "General Information for The Sims 2 (NDS).",
+		"Title": "The Sims 2 (NDS) Generalinfo",
+		"URL": "research/sims2nds"
+	},
+	{
 		"Desc": "Save Information for The Sims 2 (NDS).",
 		"Title": "The Sims 2 (NDS) Saveinfo",
-		"URL": "research/sims2nds"
+		"URL": "research/sims2nds/savefile"
 	},
 	{
 		"Desc": "The Sims 2 Nintendo DS | Painting Research",
 		"Title": "The Sims 2 (NDS) Painting",
-		"URL": "research/sims2nds/painting"
+		"URL": "research/sims2nds/savefile/painting"
 	}
 ];
 
