@@ -14,8 +14,9 @@ Optimum-Alfred-Bot has the following features as of the latest commit:
 - [x] `About` - Shows some information about the bot.
 - [x] `Help [category] [command]` - Shows a list of categories, commands, or info about a command.
 - [x] `JavaScript <JavaScript Code>` / `JS <JavaScript Code>` - Runs JavaScript code. Only usable for developers.
-- [x] `Reload <Command>` - Reloads a command. Only usable for developers.
 - [x] `Quiz <ID>` - Some Quiz fun stuff. Provide no arguments for a random question, or the ID for the answer.
+- [x] `Random [Min Value] [Max Value]` - Just generates a random value between a Min and Max value.
+- [x] `Reload <Command>` - Reloads a command. Only usable for developers.
 
 ### Sim2Team commands
 
