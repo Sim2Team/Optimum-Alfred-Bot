@@ -31,7 +31,7 @@ module.exports = {
 		else {
 			Msg = Msg.split(" ");
 
-			if (Msg.length == 2) {
+			if (Msg.length >= 2) {
 				let Min = parseInt(Msg[0]);
 				let Max = parseInt(Msg[1]);
 
@@ -42,6 +42,9 @@ module.exports = {
 					} else {
 						Message.channel.send("The Min value should be smaller than the Max value.");
 					}
+
+				} else {
+					Message.channel.send("What do you do? One of the Min or Max value is not a valid number.");
 				}
 
 			} else {
