@@ -3,26 +3,8 @@
 
 	Some Quiz fun stuff. Provide no arguments for a random question, or the ID for the answer.
 */
-
 const Discord = require("discord.js");
-
-/*
-	Modify this array for new Quizes.
-
-	question: The Question of the Quiz.
-	answers: An array of 4 items containing the possible answers.
-	correct: The index of the correct answer from the answers array, starting by 0 up to 3.
-	id: The ID of the Quiz, it should be done as following: <Game Name> #<ID>.
-*/
-const Quizes = [
-	{
-		question: "The Mummy is also called...?",
-		answers: [ "Horus Hipsomet the fourth", "Horus Kliptosap the eighteenth", "Horus Menhoset the ninth", "Horus Palimpsest the Plinth" ],
-		correct: 2,
-		id: "The Sims 2 Game Boy Advance #0000"
-	}
-];
-
+const Quizes = require("../../resources/json/quiz.json");
 
 /* Module: Quiz. */
 module.exports = {

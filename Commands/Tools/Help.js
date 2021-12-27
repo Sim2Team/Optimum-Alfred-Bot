@@ -4,7 +4,7 @@
 	Shows a list of categories, commands, or info about a command.
 */
 
-/* Module: Simple Commands. */
+/* Module: Help. */
 module.exports = {
 	Names: ["Help"],
 	Description: "Shows a list of categories, commands, or info about a command.",

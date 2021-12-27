@@ -3,10 +3,9 @@
 
 	Handle simple message commands, that may not fit anywhere else or so.
 */
+const { MessageAttachment, Formatters } = require("discord.js");
 
-const {MessageAttachment, Formatters} = require("discord.js");
-
-/* Module: Simple Commands. */
+/* Module: JavaScript. */
 module.exports = {
 	Names: ["JavaScript", "JS"],
 	Usage: "<JavaScript code>",

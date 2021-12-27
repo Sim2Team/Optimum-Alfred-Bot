@@ -1,0 +1,190 @@
+[
+	{
+		"game": "bustinout",
+		"content": [
+			{
+				"desc": "General Information for The Sims Bustin' Out (Game Boy Advance).",
+				"title": "Bustin' Out (GBA) General Info",
+				"url": "general"
+			},
+			{
+				"desc": "Internal Information for The Sims Bustin' Out (Game Boy Advance).",
+				"title": "Bustin' Out (GBA) Internal Info",
+				"url": "internal"
+			},
+			{
+				"desc": "Save Information for The Sims Bustin' Out (Game Boy Advance).",
+				"title": "Bustin' Out (GBA) Save Info",
+				"url": "savefile"
+			}
+		]
+	},
+	{
+		"game": "urbzgba",
+		"content": [
+			{
+				"desc": "General Information for The Urbz - Sims in the City (Game Boy Advance).",
+				"title": "The Urbz (GBA) General Info",
+				"url": "general"
+			},
+			{
+				"desc": "Internal Information for The Urbz - Sims in the City (Game Boy Advance).",
+				"title": "The Urbz (GBA) Internal Info",
+				"url": "internal"
+			},
+			{
+				"desc": "Save Information for The Urbz - Sims in the City (Game Boy Advance).",
+				"title": "The Urbz (GBA) Save Info",
+				"url": "savefile"
+			}
+		]
+	},
+	{
+		"game": "urbznds",
+		"content": [
+			{
+				"desc": "General Information for The Urbz - Sims in the City (Nintendo DS).",
+				"title": "The Urbz (NDS) General Info",
+				"url": "general"
+			},
+			{
+				"desc": "Internal Information for The Urbz - Sims in the City (Nintendo DS).",
+				"title": "The Urbz (NDS) Internal Info",
+				"url": "internal"
+			},
+			{
+				"desc": "Save Information for The Urbz - Sims in the City (Nintendo DS).",
+				"title": "The Urbz (NDS) Save Info",
+				"url": "savefile"
+			}
+		]
+	},
+	{
+		"game": "sims2gba",
+		"content": [
+			{
+				"desc": "General Information for The Sims 2 (Game Boy Advance).",
+				"title": "The Sims 2 (GBA) General Info",
+				"url": "general"
+			},
+			{
+				"contributors": "[SuperSaiyajinStackZ](https://github.com/SuperSaiyajinStackZ)",
+				"desc": "The Sims 2 Game Boy Advance | General Item Research",
+				"title": "The Sims 2 (GBA) Item",
+				"url": "general/item",
+				"version": "0.1.0"
+			},
+		
+		
+			{
+				"desc": "Internal Information for The Sims 2 (Game Boy Advance).",
+				"title": "The Sims 2 (GBA) Internal Info",
+				"url": "internal"
+			},
+			{
+				"contributors": "[SuperSaiyajinStackZ](https://github.com/SuperSaiyajinStackZ)",
+				"desc": "The Sims 2 Game Boy Advance | Internal Keelhaulin' Cards Minigame Research",
+				"title": "The Sims 2 (GBA) Internal Keelhaulin' Cards Minigame",
+				"url": "internal/keelhaulincards",
+				"version": "0.1.2"
+			},
+			{
+				"contributors": "[SuperSaiyajinStackZ](https://github.com/SuperSaiyajinStackZ)",
+				"desc": "The Sims 2 Game Boy Advance | Internal Menu Research",
+				"title": "The Sims 2 (GBA) Internal Menus",
+				"url": "internal/menus",
+				"version": "0.1.0"
+			},
+			{
+				"contributors": "[SuperSaiyajinStackZ](https://github.com/SuperSaiyajinStackZ)",
+				"desc": "The Sims 2 Game Boy Advance | Internal Social Action Menu Research",
+				"title": "The Sims 2 (GBA) Internal Social Action Menu",
+				"url": "internal/socialactionmenu",
+				"version": "0.1.0"
+			},
+		
+		
+			{
+				"desc": "Save Information for The Sims 2 (Game Boy Advance).",
+				"title": "The Sims 2 (GBA) Save Info",
+				"url": "savefile"
+			},
+			{
+				"contributors": "[SuperSaiyajinStackZ](https://github.com/SuperSaiyajinStackZ)",
+				"desc": "The Sims 2 Game Boy Advance | Savefile Cast Member Research",
+				"title": "The Sims 2 (GBA) Cast Member",
+				"url": "savefile/castmember",
+				"version": "0.1.0"
+			},
+			{
+				"contributors": "[SuperSaiyajinStackZ](https://github.com/SuperSaiyajinStackZ)",
+				"desc": "The Sims 2 Game Boy Advance | Savefile Episode Research",
+				"title": "The Sims 2 (GBA) Episode",
+				"url": "savefile/episode",
+				"version": "0.1.0"
+			},
+			{
+				"contributors": "[SuperSaiyajinStackZ](https://github.com/SuperSaiyajinStackZ)",
+				"desc": "The Sims 2 Game Boy Advance | Savefile House Item Research",
+				"title": "The Sims 2 (GBA) House Item",
+				"url": "savefile/houseitem",
+				"version": "0.1.0"
+			},
+			{
+				"contributors": "[SuperSaiyajinStackZ](https://github.com/SuperSaiyajinStackZ)",
+				"desc": "The Sims 2 Game Boy Advance | Savefile Item Package Research",
+				"title": "The Sims 2 (GBA) Item Package",
+				"url": "savefile/itempackage",
+				"version": "0.1.0"
+			},
+			{
+				"contributors": "[SuperSaiyajinStackZ](https://github.com/SuperSaiyajinStackZ)",
+				"desc": "The Sims 2 Game Boy Advance | Savefile Meta Research",
+				"title": "The Sims 2 (GBA) Meta",
+				"url": "savefile/meta",
+				"version": "0.1.0"
+			},
+			{
+				"contributors": "[SuperSaiyajinStackZ](https://github.com/SuperSaiyajinStackZ)",
+				"desc": "The Sims 2 Game Boy Advance | Savefile Meta Header Research",
+				"title": "The Sims 2 (GBA) Meta Header",
+				"url": "savefile/metaheader",
+				"version": "0.1.0"
+			},
+			{
+				"contributors": "[SuperSaiyajinStackZ](https://github.com/SuperSaiyajinStackZ)",
+				"desc": "The Sims 2 Game Boy Advance | Savefile Social Move Research",
+				"title": "The Sims 2 (GBA) Social Move",
+				"url": "savefile/socialmove",
+				"version": "0.1.0"
+			}
+		]
+	},
+	{
+		"game": "sims2nds",
+		"content": [
+			{
+				"desc": "General Information for The Sims 2 (Nintendo DS).",
+				"title": "The Sims 2 (NDS) General Info",
+				"url": "general"
+			},
+			{
+				"desc": "Internal Information for The Sims 2 (Nintendo DS).",
+				"title": "The Sims 2 (NDS) Internal Info",
+				"url": "internal"
+			},
+			{
+				"desc": "Save Information for The Sims 2 (Nintendo DS).",
+				"title": "The Sims 2 (NDS) Save Info",
+				"url": "savefile"
+			},
+			{
+				"contributors": "[SuperSaiyajinStackZ](https://github.com/SuperSaiyajinStackZ)",
+				"desc": "The Sims 2 Nintendo DS | Savefile Painting Research",
+				"title": "The Sims 2 (NDS) Painting",
+				"url": "savefile/painting",
+				"version": "0.1.0"
+			}
+		]
+	}
+]

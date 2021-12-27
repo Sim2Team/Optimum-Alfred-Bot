@@ -7,6 +7,14 @@ Optimum-Alfred-Bot is a discord bot written in Node.js / Discord.js for the [Sim
 Optimum-Alfred-Bot has the following features as of the latest commit:
 
 
+### Fun Commands
+
+**Some fun commands for the bot, such as generating a random value.**
+
+- [x] `Quiz <ID>` - Some Quiz fun stuff. Provide no arguments for a random question, or the ID for the answer.
+- [x] `Random [Min Value] [Max Value]` - Just generates a random value between a Min and Max value.
+
+
 ### General Commands
 
 **Commands related to general things.**
@@ -14,24 +22,23 @@ Optimum-Alfred-Bot has the following features as of the latest commit:
 - [x] `About` - Shows some information about the bot.
 - [x] `Help [category] [command]` - Shows a list of categories, commands, or info about a command.
 - [x] `JavaScript <JavaScript Code>` / `JS <JavaScript Code>` - Runs JavaScript code. Only usable for developers.
-- [x] `Quiz <ID>` - Some Quiz fun stuff. Provide no arguments for a random question, or the ID for the answer.
-- [x] `Random [Min Value] [Max Value]` - Just generates a random value between a Min and Max value.
 - [x] `Reload <Command>` - Reloads a command. Only usable for developers.
+
 
 ### Sim2Team commands
 
 **Commands related to Sim2Team.**
 
 - [x] `Sim2Editor [command]` / `S2Editor [command]` - Some commands related to [Sim2Editor](https://sim2team.github.io/sim2editor/).
-- [x] `Sim2Wiki [content]` / `S2Wiki [content]` - Links to some things from the Sim2Team wiki site. For the best results, search by the actual site path starting at [https://sim2team.github.io/wiki/](https://sim2team.github.io/wiki/) instead of keywords.
+- [x] `Sim2Guide [Guide]` / `S2Guide [Guide]` - Links to some things from the Sim2Team wiki site Guides Section.
+- [x] `Sim2Research [game] [urlpath]` / `S2Research [game] [urlpath]` - Links to some things from the Sim2Team wiki site Research Section. The URL Path needs to start by `https://sim2team.github.io/wiki/research/game/`.
+
 
 ### The Sims 2 Commands
 
 **Commands related to The Sims 2.**
 
 - [x] `S2CastList [command]` / `S2CastMember [command]` - Displays information about the cast members from The Sims 2 Game Boy Advance and Nintendo DS.
-- [ ] `S2Research [command]` - Links to some research related things of the Sim2Research Repository. (This command has been deleted. Use `.Sim2Wiki` for this command instead).
-- [ ] `S2Structures [command]` / `S2Struct [command]` - Links to some structure related things of the Sim2Research Repository. (This command has been deleted. Use `.Sim2Wiki` for this command instead).
 
 
 ## Credits

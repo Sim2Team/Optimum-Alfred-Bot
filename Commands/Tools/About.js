@@ -3,7 +3,6 @@
 
 	Shows some information about the bot.
 */
-
 const Discord = require("discord.js");
 
 /* Module: About. */
@@ -20,7 +19,6 @@ module.exports = {
 			.addField("Website", "[Sim2Team Website](https://sim2team.github.io)", true)
 			.addField("Developers", "<@644449298087411732>\n<@327757456673472523>", true)
 			.addField("Language", "Optimum Alfred Bot is written in Node.js / Discord.js.", true);
-
 		Message.channel.send({ embeds: [ Embed ] });
 	}
 };

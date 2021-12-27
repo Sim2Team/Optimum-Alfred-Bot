@@ -10,7 +10,6 @@
 		- Developers: The User IDs of the developers, that can use the commands that have `Dev: true` enabled.
 		- Prefix: The prefix the bot should use the commands with.
 */
-
 const { Client, Intents } = require("discord.js");
 const fs = require("fs");
 require("dotenv").config();
