@@ -1,0 +1,38 @@
+[
+	{
+		"question": "The Mummy is also called?",
+		"answers": [ "Horus Hipsomet the fourth", "Horus Kliptosap the eighteenth", "Horus Menhoset the ninth", "Horus Palimpsest the Plinth" ],
+		"correct": "Horus Menhoset the ninth",
+		"id": "The Sims 2 Game Boy Advance #0000"
+	},
+	{
+		"question": "The creator of Optimum Alfred is?",
+		"answers": [ "Dusty Hogg", "Tristan Legend", "Luthor L. Bigbucks", "Kayleigh Wintercrest" ],
+		"correct": "Tristan Legend",
+		"id": "The Sims 2 Game Boy Advance #0001"
+	},
+	{
+		"question": "How many Simoleons do you get from Daddy Bigbucks to buy objects in \"It All Began\"?",
+		"answers": [ "§499", "§500", "§400", "§450" ],
+		"correct": "§499",
+		"id": "The Sims 2 Game Boy Advance #0002"
+	},
+	{
+		"question": "How many objects can you store inside your House?",
+		"answers": [ "12", "10", "8", "14" ],
+		"correct": "12",
+		"id": "The Sims 2 Game Boy Advance #0003"
+	},
+	{
+		"question": "How many episodes can you replay?",
+		"answers": [ "13", "11", "12", "10" ],
+		"correct": "11",
+		"id": "The Sims 2 Game Boy Advance #0004"
+	},
+	{
+		"question": "How many points do you need to reach in the Keelhaulin' Cards minigame to win?",
+		"answers": [ "150", "250", "100", "200" ],
+		"correct": "200",
+		"id": "The Sims 2 Game Boy Advance #0005"
+	}
+]

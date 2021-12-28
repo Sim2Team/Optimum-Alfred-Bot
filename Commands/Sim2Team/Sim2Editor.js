@@ -22,7 +22,9 @@ module.exports = {
 					.setThumbnail("https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sim2Team.png")
 					.setURL("https://sim2team.github.io/sim2editor/")
 					.setColor("#447273")
-					.setDescription("-site: Sends a link to the Sim2Editor site.\n-features: Sends a link to the Sim2Editor features page.\n-supported: Send which games and regions are supported.");
+					.addField("-site", "Sends a link to the Sim2Editor site.", true)
+					.addField("-features", "Sends a link to the Sim2Editor features page.", true)
+					.addField("-supported", "Send which games and regions are supported.", true);
 				Message.channel.send({ embeds: [ Embed ]});
 
 			/* -site --> Send a link to the Sim2Editor site. */

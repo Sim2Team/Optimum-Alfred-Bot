@@ -11,7 +11,7 @@ Optimum-Alfred-Bot has the following features as of the latest commit:
 
 **Some fun commands for the bot, such as generating a random value.**
 
-- [x] `Quiz <ID>` - Some Quiz fun stuff. Provide no arguments for a random question, or the ID for the answer.
+- [x] `Quiz [Game] [ID]` - Some Quiz fun stuff. Provide the game name as the first argument, then optional the Quiz ID to get the correct answer for that question.
 - [x] `Random [Min Value] [Max Value]` - Just generates a random value between a Min and Max value.
 
 
