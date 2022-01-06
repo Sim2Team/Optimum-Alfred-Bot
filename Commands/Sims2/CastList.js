@@ -3,10 +3,12 @@
 
 	Shows various informations about a specified Cast.
 */
+
 const Discord = require("discord.js");
 const CastMembers = require("../../resources/json/castlist.json");
 
-/* Module: Cast List. */
+
+/* Module: S2CastList. */
 module.exports = {
 	Names: ["S2CastList", "S2CastMember"],
 	Usage: "[command]",

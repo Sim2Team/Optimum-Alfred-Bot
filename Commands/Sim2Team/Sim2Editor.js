@@ -3,7 +3,9 @@
 
 	Some commands related to Sim2Editor.
 */
+
 const Discord = require("discord.js");
+
 
 /* Module: Sim2Editor. */
 module.exports = {

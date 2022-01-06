@@ -3,9 +3,11 @@
 
 	Links to some things from the Sim2Team wiki site Guides Section.
 */
+
 const Discord = require("discord.js");
 const DefaultURL = "https://sim2team.github.io/wiki/guides";
 const Pages = require("../../resources/json/sim2guide.json");
+
 
 /* Module: Sim2Guide. */
 module.exports = {

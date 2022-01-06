@@ -3,6 +3,7 @@
 
 	Some Quiz fun stuff. Provide the game name as the first argument, then optional the Quiz ID to get the correct answer for that question.
 */
+
 const Discord = require("discord.js");
 
 /* All Quiz JSON files. */

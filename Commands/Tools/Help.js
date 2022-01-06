@@ -4,6 +4,7 @@
 	Shows a list of categories, commands, or info about a command.
 */
 
+
 /* Module: Help. */
 module.exports = {
 	Names: ["Help"],

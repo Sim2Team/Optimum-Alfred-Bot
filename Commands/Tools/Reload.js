@@ -4,6 +4,7 @@
 	Reloads a command.
 */
 
+
 module.exports = {
 	Names: ["Reload"],
 	Usage: "<command>",

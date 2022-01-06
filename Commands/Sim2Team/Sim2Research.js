@@ -3,6 +3,7 @@
 
 	Links to some things from the Sim2Team wiki site Research Section. The URL Path needs to start by "https://sim2team.github.io/wiki/research/game/".
 */
+
 const Discord = require("discord.js");
 const DefaultURL = "https://sim2team.github.io/wiki/research";
 const Pages = require("../../resources/json/sim2research.json");

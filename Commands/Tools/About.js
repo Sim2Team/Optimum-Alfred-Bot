@@ -3,7 +3,9 @@
 
 	Shows some information about the bot.
 */
+
 const Discord = require("discord.js");
+
 
 /* Module: About. */
 module.exports = {

@@ -4,6 +4,8 @@
 	Just getting a random value from a min and max value.
 	This implementation is based of how The Sims 2 Game Boy Advance does it (at least from how I understand it - SuperSaiyajinStackZ).
 */
+
+
 function RandomNum(Seed, Min, Max) {
 	if (Min < Max) {
 		let RNGVal = Seed;
@@ -18,6 +20,7 @@ function RandomNum(Seed, Min, Max) {
 
 	return Min;
 };
+
 
 /* Module: Random. */
 module.exports = {

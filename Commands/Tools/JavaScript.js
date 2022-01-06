@@ -3,7 +3,9 @@
 
 	Handle simple message commands, that may not fit anywhere else or so.
 */
+
 const { MessageAttachment, Formatters } = require("discord.js");
+
 
 /* Module: JavaScript. */
 module.exports = {
