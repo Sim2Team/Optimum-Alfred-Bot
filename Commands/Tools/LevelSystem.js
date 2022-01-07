@@ -6,10 +6,28 @@
 
 
 /*
-	TODO: Handle the Leaderboard.
+	Shows the Top 5 Users from the Level System.
 */
 function LeaderBoard(Alfred, Message) {
-	Message.channel.send("The Leaderboard is a TODO.");
+	if (!Object.keys(Alfred.LevelSystem.users).length) Message.channel.send("There are no users in the Level System yet.");
+	else {
+		let Msg = "**The top 5 Users of the Level System:**\n\n";
+		let Users = [ ];
+
+		for (let Idx = 0; Idx < Object.keys(Alfred.LevelSystem.users).length; Idx++) {
+			const User = Object.keys(Alfred.LevelSystem.users)[Idx];
+			Users.push(Alfred.LevelSystem.users[User]);
+		}
+
+		Users.sort((A, B) => { A.points > B.points } );
+
+		for (let Idx = 0; Idx < Users.length && Idx < 5; Idx++) {
+			if (Idx == Users.length - 1) Msg += (Idx + 1).toString() + ": " + Users[Idx].name + " - " + Users[Idx].points.toString();
+			else Msg += (Idx + 1).toString() + ": " + Users[Idx].name  + " - " + Users[Idx].points.toString() + "\n";
+		}
+
+		Message.channel.send(Msg);
+	}
 };
 
 
@@ -71,13 +89,13 @@ function PointsAndLevel(Alfred, Message) {
 /* Module: LevelSystem. */
 module.exports = {
 	Names: ["LevelSystem", "LS"],
-	Description: "A command related to the Sanity Level System. You can use an optional argument called \"lb\" for a Leaderboard (TODO) or \"levels\" for the Levels.",
+	Description: "A command related to the Sanity Level System. You can use an optional argument called \"lb\" for a Leaderboard or \"levels\" for the Levels.",
 	Handler(Message, Alfred) {
 		const Msg = Message.Value.toLowerCase();
 
 		if (Msg.length == 0) PointsAndLevel(Alfred, Message);
 		else {
-			if (Msg == "lb") LeaderBoard(Alfred, Message);
+			if (Msg == "lb" || Msg == "leaderboard") LeaderBoard(Alfred, Message);
 			else if (Msg == "levels") ShowLevels(Alfred, Message);
 		}
 	}
