@@ -37,6 +37,8 @@ async function HandleSanityRoleGiving(Alfred, User) {
 /* Handle the Event. */
 module.exports = async function(Alfred, Message) {
 	if (Message.member?.user.bot) return; // Ensure it's not a bot.
+	if (!Message.member?.user) return;
+
 
 	let ExecuteCommand = false;
 	if (Message.content.startsWith(Alfred.Config.Prefix)) { // Ensure it has the defined bot prefix.
