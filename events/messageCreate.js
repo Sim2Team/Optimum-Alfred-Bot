@@ -39,7 +39,6 @@ module.exports = async function(Alfred, Message) {
 	if (Message.member?.user.bot) return; // Ensure it's not a bot.
 	if (!Message.member?.user) return;
 
-
 	let ExecuteCommand = false;
 	if (Message.content.startsWith(Alfred.Config.Prefix)) { // Ensure it has the defined bot prefix.
 		if (Alfred.Config.Channels.includes(Message.channel.id)) ExecuteCommand = true; // Ensure it's in one of the defined bot channels to execute commands.
@@ -57,6 +56,8 @@ module.exports = async function(Alfred, Message) {
 			if (Alfred.LevelSystem.users[ID].timestamp + Alfred.LevelSystem.interval < Time) {
 				Alfred.LevelSystem.users[ID].timestamp = Time;
 				Alfred.LevelSystem.users[ID].points += Alfred.LevelSystem.msgpoints;
+				if (Alfred.LevelSystem.users[ID].name != Message.member.displayName) Alfred.LevelSystem.users[ID].name = Message.member.displayName; // Update Nickname.
+
 				HandleSanityRoleGiving(Alfred, Message.member);
 			}
 	
@@ -65,7 +66,7 @@ module.exports = async function(Alfred, Message) {
 			let Obj = {
 				"timestamp": Time,
 				"points": Alfred.LevelSystem.msgpoints,
-				"name": Message.member.user.username
+				"name": Message.member.displayName
 			};
 	
 			Alfred.LevelSystem.users[ID] = Obj;

@@ -56,6 +56,7 @@ function PointsAndLevel(Alfred, Message) {
 
 	if (Res != undefined) {
 		const Points = Alfred.LevelSystem.users[ID].points;
+		Username = Alfred.LevelSystem.users[ID].name;
 		let PointsUntilNextLevel = 0;
 		let Level = 0;
 
@@ -77,7 +78,7 @@ function PointsAndLevel(Alfred, Message) {
 			Level = Object.keys(Alfred.LevelSystem.levels).length - 1;
 		}
 
-		if (Level != -1) Message.channel.send(Username + ", you currently have " + Points + " Points and have currently Level " + Level + ".\nPoints until the next Level: " + PointsUntilNextLevel + ".");
+		if (Level != -1) Message.channel.send(Username + ", you currently have " + Points + " Points and you are currently at Level " + Level + ".\nPoints until the next Level: " + PointsUntilNextLevel + ".");
 		else Message.channel.send(Username + ", you currently have " + Points + " Points.\nPoints until the next Level: " + PointsUntilNextLevel + ".");
 
 	} else {
