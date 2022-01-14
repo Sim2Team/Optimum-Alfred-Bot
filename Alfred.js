@@ -58,10 +58,7 @@ if (fs.existsSync("resources/data/levelsystem.json")) {
 		"users": { } // All the users are listed on there with an object of the user ID and with points, timestamp and the user name.
 	}
 
-	fs.writeFile("./resources/data/levelsystem.json", JSON.stringify(Alfred.LevelSystem, null, "\t"), function(Error) {
-		if (Error) throw Error;
-		console.log('Written levelsystem.json to file.');
-	});
+	fs.writeFileSync("./resources/data/levelsystem.json", JSON.stringify(Alfred.LevelSystem, null, "\t"));
 }
 
 console.log("Initializing the Bot...");

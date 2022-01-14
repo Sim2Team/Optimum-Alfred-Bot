@@ -93,7 +93,7 @@
 				"desc": "The Sims 2 Game Boy Advance | Internal Menu Research",
 				"title": "The Sims 2 (GBA) Internal Menus",
 				"url": "internal/menus",
-				"version": "0.1.0"
+				"version": "0.1.1"
 			},
 			{
 				"contributors": "[SuperSaiyajinStackZ](https://github.com/SuperSaiyajinStackZ)",
@@ -121,7 +121,7 @@
 				"desc": "The Sims 2 Game Boy Advance | Savefile Episode Research",
 				"title": "The Sims 2 (GBA) Episode",
 				"url": "savefile/episode",
-				"version": "0.1.0"
+				"version": "0.2.0"
 			},
 			{
 				"contributors": "[SuperSaiyajinStackZ](https://github.com/SuperSaiyajinStackZ)",
