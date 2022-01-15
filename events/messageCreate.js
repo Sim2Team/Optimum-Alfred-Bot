@@ -41,7 +41,7 @@ module.exports = async function(Alfred, Message) {
 
 	let ExecuteCommand = false;
 	if (Message.content.startsWith(Alfred.Config.Prefix)) { // Ensure it has the defined bot prefix.
-		if (Alfred.Config.Channels.includes(Message.channel.id)) ExecuteCommand = true; // Ensure it's in one of the defined bot channels to execute commands.
+		/* if (Alfred.Config.Channels.includes(Message.channel.id)) */ ExecuteCommand = true; // Ensure it's in one of the defined bot channels to execute commands.
 	}
 
 	/* Handle Sanity Level System. */
