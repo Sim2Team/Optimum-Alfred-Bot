@@ -14,10 +14,8 @@ function LeaderBoard(Alfred, Message) {
 		let Msg = "**The top 5 Users of the Level System:**\n\n";
 		let Users = [ ];
 
-		for (let Idx = 0; Idx < Object.keys(Alfred.LevelSystem.users).length; Idx++) {
-			const User = Object.keys(Alfred.LevelSystem.users)[Idx];
-			Users.push(Alfred.LevelSystem.users[User]);
-		}
+		let Objects = Object.keys(Alfred.LevelSystem.users);
+		for (let Idx = 0; Idx < Objects.length; Idx++) Users.push(Alfred.LevelSystem.users[Objects[Idx]]);
 
 		Users.sort((A, B) => { A.points > B.points } );
 
@@ -37,8 +35,9 @@ function LeaderBoard(Alfred, Message) {
 function ShowLevels(Alfred, Message) {
 	let Msg = "You can see the required points for each level below.\n";
 
-	for (let Idx = 0; Idx < Object.keys(Alfred.LevelSystem.levels).length; Idx++) {
-		if (Idx == Object.keys(Alfred.LevelSystem.levels).length - 1) Msg += "Level " + Idx.toString() + " => " + Alfred.LevelSystem.levels[Idx].points.toString();
+	let Objects = Object.keys(Alfred.LevelSystem.levels);
+	for (let Idx = 0; Idx < Objects.length; Idx++) {
+		if (Idx == Objects.length - 1) Msg += "Level " + Idx.toString() + " => " + Alfred.LevelSystem.levels[Idx].points.toString();
 		else Msg += "Level " + Idx.toString() + " => " + Alfred.LevelSystem.levels[Idx].points.toString() + "\n";
 	}
 
@@ -60,10 +59,11 @@ function PointsAndLevel(Alfred, Message) {
 		let PointsUntilNextLevel = 0;
 		let Level = 0;
 
+		let Objects = Object.keys(Alfred.LevelSystem.levels);
 		/* Only do the Points until next level if your current points don't pass the max. */
-		if (Points < Alfred.LevelSystem.levels[Object.keys(Alfred.LevelSystem.levels).length - 1].points) {
+		if (Points < Alfred.LevelSystem.levels[Objects.length - 1].points) {
 			/* Loop through all levels and their points. */
-			for (let Idx = 0; Idx < Object.keys(Alfred.LevelSystem.levels).length; Idx++) {
+			for (let Idx = 0; Idx < Objects.length; Idx++) {
 				if (Alfred.LevelSystem.levels[Idx].points > Points) {
 					/* Set the Sanity Level. */
 					if (Idx == 0) Level = -1;

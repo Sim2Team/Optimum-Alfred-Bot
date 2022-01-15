@@ -18,7 +18,8 @@ async function HandleSanityRoleGiving(Alfred, User) {
 	let Roles = [ ];
 
 	/* Loop through all roles. */
-	for (let Idx = 0; Idx < Object.keys(Alfred.LevelSystem.levels).length; Idx++) {
+	let Objects = Object.keys(Alfred.LevelSystem.levels);
+	for (let Idx = 0; Idx < Objects.length; Idx++) {
 		if (UserObj.points < Alfred.LevelSystem.levels[Idx].points) break; // No role you can get as not enough points.
 
 		Roles.push(Alfred.LevelSystem.levels[Idx].role);
