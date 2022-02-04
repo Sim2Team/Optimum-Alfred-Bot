@@ -32,7 +32,7 @@ async function HandleSanityRoleGiving(Alfred, User) {
 
 		if (AddRoles.length) await User.roles.add(AddRoles);
 	}
-};
+}
 
 
 /* Handle the Event. */
@@ -67,13 +67,15 @@ module.exports = async function(Alfred, Message) {
 			let Obj = {
 				"timestamp": Time,
 				"points": Alfred.LevelSystem.msgpoints,
-				"name": Message.member.displayName
+				"name": Message.member.displayName,
+				"emotes": 0,
+				"contributions": 0
 			};
-	
+
 			Alfred.LevelSystem.users[ID] = Obj;
 		}
 
-		/* We can execute a command, so let's go! */
+	/* We can execute a command, so let's go! */
 	} else {
 		let Match = Message.content.match(RegExp(Alfred.Config.Prefix.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&") + "\\s*([^\\s]+)\\s*(.*)", "si"));
 		if (Match.length < 2) return;
@@ -106,4 +108,4 @@ module.exports = async function(Alfred, Message) {
 			}
 		}
 	}
-};
+}

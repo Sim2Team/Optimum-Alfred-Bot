@@ -34,4 +34,4 @@ module.exports = {
 			else Message.channel.send("Please provide a valid rule.");
 		}
 	}
-};
+}

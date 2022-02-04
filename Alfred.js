@@ -55,7 +55,7 @@ if (fs.existsSync("resources/data/levelsystem.json")) {
 		],
 		"msgpoints": 2, // Amount of points you'll get on a message.
 		"interval": 30000, // The amount of milliseconds that need to pass until you get points again. 1000 is 1 second in Milliseconds, do 30 seconds interval.
-		"users": { } // All the users are listed on there with an object of the user ID and with points, timestamp and the user name.
+		"users": { } // All the users are listed on there with an object of the user ID and with points, emotes, contributions, timestamp and the user name.
 	}
 
 	fs.writeFileSync("./resources/data/levelsystem.json", JSON.stringify(Alfred.LevelSystem, null, "\t"));

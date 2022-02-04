@@ -22,7 +22,7 @@ Optimum-Alfred-Bot has the following features as of the latest commit:
 - [x] `About` - Shows some information about the bot.
 - [x] `Help [category] [command]` - Shows a list of categories, commands, or info about a command.
 - [x] `JavaScript <JavaScript Code>` / `JS <JavaScript Code>` - Runs JavaScript code. Only usable for developers.
-- [x] `LevelSystem [argument]` / `LS [argument]` - A command related to the Sanity Level System. You can use an optional argument called "lb" for a Leaderboard or "levels" for the Levels.
+- [x] `LevelSystem [argument]` / `LS [argument]` - A command related to the Sanity Level System. You can use an optional argument called "lb" for a Leaderboard or "levels" for the Levels or a user's nickname to show the User Info of the Level System.
 - [x] `Reload <Command>` - Reloads a command. Only usable for developers.
 - [x] `Rule [command]` - Sends a specific rule.
 - [x] `Shutdown` - Save the Level System data back to a file and shut the bot down. Only usable for developers.

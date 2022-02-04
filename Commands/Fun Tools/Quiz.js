@@ -90,7 +90,7 @@ function GenerateQuiz(Message) {
 	}
 
 	return Embed;
-};
+}
 
 
 /* Module: Quiz. */
@@ -116,4 +116,4 @@ module.exports = {
 			Message.channel.send({ embeds: [ Embed ] });
 		}
 	}
-};
+}

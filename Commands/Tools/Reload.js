@@ -31,4 +31,4 @@ module.exports = {
 
 		Message.channel.send("Command could not be found!");
 	}
-};
+}

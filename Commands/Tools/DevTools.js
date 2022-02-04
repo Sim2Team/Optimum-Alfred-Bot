@@ -13,4 +13,4 @@ module.exports = {
 	Handler(Message) {
 		return;
 	}
-};
+}

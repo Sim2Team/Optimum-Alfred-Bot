@@ -75,7 +75,7 @@ function GenerateEmbed(Message) {
 	}
 
 	return Embed;
-};
+}
 
 
 /* Module: Sim2Research. */
@@ -110,4 +110,4 @@ module.exports = {
 			}
 		}
 	}
-};
+}

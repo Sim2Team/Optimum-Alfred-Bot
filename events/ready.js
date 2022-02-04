@@ -25,4 +25,4 @@ module.exports = async (Alfred) => {
 			Alfred.Commands[Category].Commands[`${Category}/${File}`] = require(`../Commands/${Category}/${File}`);
 		}
 	}
-};
+}

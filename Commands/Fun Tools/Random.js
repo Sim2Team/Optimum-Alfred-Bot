@@ -19,7 +19,7 @@ function RandomNum(Seed, Min, Max) {
 	}
 
 	return Min;
-};
+}
 
 
 /* Module: Random. */
@@ -55,4 +55,4 @@ module.exports = {
 			}
 		}
 	}
-};
+}

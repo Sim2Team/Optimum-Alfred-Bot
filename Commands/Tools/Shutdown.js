@@ -18,4 +18,4 @@ module.exports = {
 		await Message.channel.send("Goodbye.");
 		process.exit();
 	}
-};
+}

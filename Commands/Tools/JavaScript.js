@@ -27,4 +27,4 @@ module.exports = {
 			Message.channel.send(Formatters.codeBlock(e.toString()));
 		}
 	}
-};
+}
