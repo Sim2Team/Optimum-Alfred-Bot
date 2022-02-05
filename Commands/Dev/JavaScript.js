@@ -1,7 +1,7 @@
 /*
-	Optimum Alfred's Simple Commands Handler implementation.
+	Optimum Alfred's JavaScript handler implementation.
 
-	Handle simple message commands, that may not fit anywhere else or so.
+	Runs some JavaScript code, useful to test things quickly.
 */
 
 const { MessageAttachment, Formatters } = require("discord.js");

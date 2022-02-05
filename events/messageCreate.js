@@ -5,6 +5,7 @@
 	- Handle the Level System.
 */
 
+const SystemLimit = 5000000; // 5.000.000.
 
 /*
 	Handle the giving of the Sanity Level roles.
@@ -18,8 +19,8 @@ async function HandleSanityRoleGiving(Alfred, User) {
 	let Roles = [ ];
 
 	/* Loop through all roles. */
-	let Objects = Object.keys(Alfred.LevelSystem.levels);
-	for (let Idx = 0; Idx < Objects.length; Idx++) {
+	const LevelKeys = Object.keys(Alfred.LevelSystem.levels).length;
+	for (let Idx = 0; Idx < LevelKeys; Idx++) {
 		if (UserObj.points < Alfred.LevelSystem.levels[Idx].points) break; // No role you can get as not enough points.
 
 		Roles.push(Alfred.LevelSystem.levels[Idx].role);
@@ -32,6 +33,42 @@ async function HandleSanityRoleGiving(Alfred, User) {
 
 		if (AddRoles.length) await User.roles.add(AddRoles);
 	}
+}
+
+
+/*
+	Handle Points for an existing user. */
+function HandlePoints(Alfred, ChannelID, User) {
+	if (Alfred.LevelSystem.streammodeon) {
+		if (ChannelID == Alfred.LevelSystem.streammodeid) {
+			/* Give 4 instead of 2 Points in that channel. */
+			if (User.points + Alfred.LevelSystem.streammodepoints <= SystemLimit) User.points += Alfred.LevelSystem.streammodepoints;
+			else User.points = SystemLimit;
+			return;
+		}
+	}
+
+	/* Give 2 Points. */
+	if (User.points + Alfred.LevelSystem.msgpoints <= SystemLimit) User.points += Alfred.LevelSystem.msgpoints;
+	else User.points = SystemLimit;
+}
+
+
+/* Create a new Entry for a User on the Level System. */
+function CreateLSEntry(Alfred, UserID, Name, ChannelID, Time) {
+	let UserData = {
+		"timestamp": Time,
+		"points": Alfred.LevelSystem.msgpoints,
+		"name": Name,
+		"emotes": 0,
+		"contributions": 0
+	};
+
+	if (Alfred.LevelSystem.streammodeon) {
+		if (ChannelID == Alfred.LevelSystem.streammodeid) UserData["points"] = Alfred.LevelSystem.streammodepoints;
+	}
+
+	Alfred.LevelSystem.users[UserID] = UserData;
 }
 
 
@@ -51,28 +88,20 @@ module.exports = async function(Alfred, Message) {
 		let Time = Date.now();
 	
 		/* Is there any better way to handle this? */
-		let Res = Alfred.LevelSystem.users[ID];
-		if (Res != undefined) {
+		let User = Alfred.LevelSystem.users[ID];
+		if (User != undefined) {
 			/* Ensure enough time has been passed on the new message. */
-			if (Alfred.LevelSystem.users[ID].timestamp + Alfred.LevelSystem.interval < Time) {
-				Alfred.LevelSystem.users[ID].timestamp = Time;
-				Alfred.LevelSystem.users[ID].points += Alfred.LevelSystem.msgpoints;
-				if (Alfred.LevelSystem.users[ID].name != Message.member.displayName) Alfred.LevelSystem.users[ID].name = Message.member.displayName; // Update Nickname.
+			if (User.timestamp + Alfred.LevelSystem.interval < Time) {
+				User.timestamp = Time;
+				HandlePoints(Alfred, Message.channel.id, User);
 
+				if (User.name != Message.member.displayName) User.name = Message.member.displayName; // Update Nickname.
 				HandleSanityRoleGiving(Alfred, Message.member);
 			}
 	
 		/* The user does not exist in the Level System, so create it and give the initial points. */
 		} else {
-			let Obj = {
-				"timestamp": Time,
-				"points": Alfred.LevelSystem.msgpoints,
-				"name": Message.member.displayName,
-				"emotes": 0,
-				"contributions": 0
-			};
-
-			Alfred.LevelSystem.users[ID] = Obj;
+			CreateLSEntry(Alfred, ID, Message.member.displayName, Message.channel.id, Time);
 		}
 
 	/* We can execute a command, so let's go! */

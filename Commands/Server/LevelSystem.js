@@ -6,7 +6,10 @@
 
 const Discord = require("discord.js");
 
-const LSClrs = [ "#B9010B", "#60bC7B", "#B59C42", "#A7A7D7", "#A542A3" ]; // Sanity Level 0 - 4.
+const LSClrs = [
+	"#B9010B", "#60bC7B", "#B59C42", "#A7A7D7", "#A542A3", // Sanity Level 0 - 4.
+	"#BAB748", "#2A7B39", "#5D8BB5", "#12CE61", "#3C1A77", "#000893" // Sanity Level 5 - 10 (Zimmer, Keeble, Dripple, Burple, Ava, Emperor).
+];
 const LSNoRoleClr = "#99AAB5"; // TODO: Decide which color to show if no role exists for the user or for the Leaderboard | Levels.
 
 
@@ -21,7 +24,7 @@ function LeaderBoard(Alfred, Message) {
 			Data.push( { "Name": Alfred.LevelSystem.users[Objects[Idx]].name, "Points": Alfred.LevelSystem.users[Objects[Idx]].points } );
 		}
 
-		Data.sort((A, B) => (B["Points"] > A["Points"]) ? 1 : ((A["Points"] > B["Points"]) ? -1 : 0)); // Easy one line thing.
+		Data.sort((A, B) => (B["Points"] > A["Points"]) ? 1 : ((A["Points"] > B["Points"]) ? -1 : 0)); // Easy one line sort.
 		const Len = Data.length;
 
 		const Embed = new Discord.MessageEmbed()
@@ -43,31 +46,39 @@ function LeaderBoard(Alfred, Message) {
 function ShowLevels(Alfred, Message) {
 	let Data = [ ];
 	const Length = Object.keys(Alfred.LevelSystem.levels).length;
-	for (let Idx = 0; Idx < Length; Idx++) Data.push( Alfred.LevelSystem.levels[Idx].points.toString() );
+	for (let Idx = 0; Idx < Length; Idx++) Data.push( { "Points": Alfred.LevelSystem.levels[Idx].points.toString(), "Name": Alfred.LevelSystem.levels[Idx].name } );
 
 	const Embed = new Discord.MessageEmbed()
 		.setTitle("Level System - Levels")
 		.setColor(LSNoRoleClr)
 		.setDescription("Showing the Sanity Levels and their required Points you need to get for it.")
 		.setThumbnail("https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sim2Team.png")
-		.addField("Sanity 0", Data[0])
-		.addField("Sanity 1", Data[1])
-		.addField("Sanity 2", Data[2])
-		.addField("Sanity 3", Data[3])
-		.addField("Sanity 4", Data[4]);
+		.addField(Data[0]["Name"], Data[0]["Points"])
+		.addField(Data[1]["Name"], Data[1]["Points"])
+		.addField(Data[2]["Name"], Data[2]["Points"])
+		.addField(Data[3]["Name"], Data[3]["Points"])
+		.addField(Data[4]["Name"], Data[4]["Points"])
+		/* Special Roles (Sanity 5+). */
+		.addField(Data[5]["Name"], Data[5]["Points"])
+		.addField(Data[6]["Name"], Data[6]["Points"])
+		.addField(Data[7]["Name"], Data[7]["Points"])
+		.addField(Data[8]["Name"], Data[8]["Points"])
+		.addField(Data[9]["Name"], Data[9]["Points"])
+		.addField(Data[10]["Name"], Data[10]["Points"]);
+
 	Message.channel.send({ embeds: [ Embed ] });
 }
 
 
 /* Sends User Information with Points, Emotes, Contributions etc. */
 function UserInfo(Alfred, Message, Name) {
-	let UsersObject = Object.keys(Alfred.LevelSystem.users);
+	let UserObjKeys = Object.keys(Alfred.LevelSystem.users);
 	let User = undefined;
 
 	/* Search if the name is found. */
-	for (let Idx = 0; Idx < UsersObject.length; Idx++) {
-		if (Alfred.LevelSystem.users[UsersObject[Idx]].name.toLowerCase().includes(Name)) {
-			User = Alfred.LevelSystem.users[UsersObject[Idx]];
+	for (let Idx = 0; Idx < UserObjKeys.length; Idx++) {
+		if (Alfred.LevelSystem.users[UserObjKeys[Idx]].name.toLowerCase().includes(Name)) {
+			User = Alfred.LevelSystem.users[UserObjKeys[Idx]];
 			break;
 		}
 	}
@@ -75,7 +86,8 @@ function UserInfo(Alfred, Message, Name) {
 	if (!User) Message.channel.send(Name + " is not found in the Level System.");
 	/* The user is found, so we can continue on. */
 	else {
-		let DataObject = {
+		/* By default, everything is set to "Unknown" to not mess things up. */
+		let Data = {
 			"Level": "Unknown",
 			"Username": "Unknown",
 			"Points": "Unknown",
@@ -85,11 +97,10 @@ function UserInfo(Alfred, Message, Name) {
 		};
 
 		const Points = User.points;
-		DataObject["Username"] = User.name;
+		Data["Username"] = User.name;
 		let PointsUntilNextLevel = 0;
 		let Level = 0;
-
-		let LevelLength = Object.keys(Alfred.LevelSystem.levels).length;
+		const LevelLength = Object.keys(Alfred.LevelSystem.levels).length;
 
 		/* Only do the Points until next level if your current points don't pass the max. */
 		if (Points < Alfred.LevelSystem.levels[LevelLength - 1].points) {
@@ -104,17 +115,18 @@ function UserInfo(Alfred, Message, Name) {
 					break;
 				}
 			}
-
+		
+		/* Because we have more Points than the max, directly set the Level as max. */
 		} else {
 			Level = LevelLength - 1;
 		}
 
 		/* Push the Strings here. */
-		if (Level != -1) DataObject["Level"] = Level.toString();
-		DataObject["Points"] = Points.toString();
-		DataObject["Emotes"] = User.emotes.toString();
-		DataObject["Contributions"] = User.contributions.toString();
-		DataObject["UntilNextLevel"] = PointsUntilNextLevel.toString();
+		if (Level != -1) Data["Level"] = Level.toString(); // If Level is not -1, then we have a valid Level.
+		Data["Points"] = Points.toString();
+		Data["Emotes"] = User.emotes.toString();
+		Data["Contributions"] = User.contributions.toString();
+		Data["UntilNextLevel"] = PointsUntilNextLevel.toString();
 		const Clr = (Level == -1 ? LSNoRoleClr : LSClrs[Level]);
 
 		/* Create the Embed. */
@@ -122,12 +134,12 @@ function UserInfo(Alfred, Message, Name) {
 			.setTitle("Level System - User Info")
 			.setColor(Clr)
 			.setThumbnail("https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sim2Team.png")
-			.setDescription("User Information for " + DataObject["Username"] + ".")
-			.addField("Points", DataObject["Points"], true)
-			.addField("Emotes", DataObject["Emotes"], true)
-			.addField("Contributions", DataObject["Contributions"], true)
-			.addField("Level", DataObject["Level"], true)
-			.addField("Points until next Level", DataObject["UntilNextLevel"]);
+			.setDescription("User Information for " + Data["Username"] + ".")
+			.addField("Points", Data["Points"], true)
+			.addField("Emotes", Data["Emotes"], true)
+			.addField("Contributions", Data["Contributions"], true)
+			.addField("Level", Data["Level"], true)
+			.addField("Points until next Level", Data["UntilNextLevel"]);
 		Message.channel.send({ embeds: [ Embed ] });
 	}
 }
@@ -140,7 +152,7 @@ module.exports = {
 	Handler(Message, Alfred) {
 		const Msg = Message.Value.toLowerCase();
 
-		if (Msg.length == 0) UserInfo(Alfred, Message, Message.member.user.username.toLowerCase()); // In this case, show your info.
+		if (Msg.length == 0) UserInfo(Alfred, Message, Message.member.displayName.toLowerCase()); // In this case, show your info.
 		else {
 			if (Msg == "lb" || Msg == "leaderboard") LeaderBoard(Alfred, Message); // The top 5 users of the Level System.
 			else if (Msg == "levels") ShowLevels(Alfred, Message); // Show the Levels.

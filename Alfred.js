@@ -34,26 +34,68 @@ if (fs.existsSync("resources/data/levelsystem.json")) {
 		"levels": [
 			{
 				"points": 8,
-				"role": "928693785108570152"
+				"role": "928693785108570152",
+				"name": "Sanity-0"
 			},
 			{
 				"points": 500,
-				"role": "928693608536743996"
+				"role": "928693608536743996",
+				"name": "Sanity-1"
 			},
 			{
 				"points": 1000,
-				"role": "928693387903766589"
+				"role": "928693387903766589",
+				"name": "Sanity-2"
 			},
 			{
 				"points": 2000,
-				"role": "928693926347567185"
+				"role": "928693926347567185",
+				"name": "Sanity-3"
 			},
 			{
 				"points": 4000,
-				"role": "928695492752343100"
+				"role": "928695492752343100",
+				"name": "Sanity-4"
+			},
+
+			/* Special roles here (Sanity 5+). */
+			{
+				"points": 7000,
+				"role": "939092558024433694",
+				"name": "Zimmer"
+			},
+
+			{
+				"points": 10000,
+				"role": "939092711208783873",
+				"name": "Keeble"
+			},
+			{
+				"points": 50000,
+				"role": "939092813839208519",
+				"name": "Dripple"
+			},
+			{
+				"points": 100000,
+				"role": "939092883749863434",
+				"name": "Burple"
+			},
+			{
+				"points": 500000,
+				"role": "939092971251441664",
+				"name": "Ava"
+			},
+			{
+				"points": 1000000,
+				"role": "939093014305968128",
+				"name": "Emperor"
 			}
+
 		],
 		"msgpoints": 2, // Amount of points you'll get on a message.
+		"streammodepoints": 4, // Amount of points you'll get if on stream mode.
+		"streammodeon": false, // If Stream mode is active, or not.
+		"streammodeid": "", // The thread ID of the stream channel.
 		"interval": 30000, // The amount of milliseconds that need to pass until you get points again. 1000 is 1 second in Milliseconds, do 30 seconds interval.
 		"users": { } // All the users are listed on there with an object of the user ID and with points, emotes, contributions, timestamp and the user name.
 	}

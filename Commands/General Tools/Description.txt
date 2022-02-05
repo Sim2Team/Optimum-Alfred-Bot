@@ -1,0 +1,1 @@
+Some general things, such as showing info about the bot or the Help.
