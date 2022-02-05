@@ -4,7 +4,6 @@
 	Manage the Level System.
 */
 
-const SystemLimit = 5000000; // 5.000.000.
 
 /*
 	Add a specific amount of points to a specific category.
@@ -30,21 +29,21 @@ function AddCategory(Alfred, Message, User, Category, Amount) {
 		/* Now check the category. */
 		switch(Category) {
 			case "points":
-				if (UserObj.points + Amount <= SystemLimit) {
+				if (UserObj.points + Amount <= Alfred.LevelSystem.pointlimit) {
 					UserObj.points += Amount;
 					Message.channel.send("Added " + Amount.toString() + " Point(s) to " + User + ".");
 				}
 				break;
 
 			case "emotes":
-				if (UserObj.emotes + Amount <= SystemLimit) {
+				if (UserObj.emotes + Amount <= Alfred.LevelSystem.pointlimit) {
 					UserObj.emotes += Amount;
 					Message.channel.send("Added " + Amount.toString() + " Emote(s) to " + User + ".");
 				}
 				break;
 
 			case "contributions":
-				if (UserObj.contributions + Amount <= SystemLimit) {
+				if (UserObj.contributions + Amount <= Alfred.LevelSystem.pointlimit) {
 					UserObj.contributions += Amount;
 					Message.channel.send("Added " + Amount.toString() + " Contribution(s) to " + User + ".");
 				}
@@ -78,21 +77,21 @@ function SetCategory(Alfred, Message, User, Category, Amount) {
 		/* Now check the category. */
 		switch(Category) {
 			case "points":
-				if (Amount <= SystemLimit) {
+				if (Amount <= Alfred.LevelSystem.pointlimit) {
 					UserObj.points = Amount;
 					Message.channel.send("Set " + Amount.toString() + " Point(s) to " + User + ".");
 				}
 				break;
 
 			case "emotes":
-				if (Amount <= SystemLimit) {
+				if (Amount <= Alfred.LevelSystem.pointlimit) {
 					UserObj.emotes = Amount;
 					Message.channel.send("Set " + Amount.toString() + " Emote(s) to " + User + ".");
 				}
 				break;
 
 			case "contributions":
-				if (Amount <= SystemLimit) {
+				if (Amount <= Alfred.LevelSystem.pointlimit) {
 					UserObj.contributions = Amount;
 					Message.channel.send("Set " + Amount.toString() + " Contribution(s) to " + User + ".");
 				}

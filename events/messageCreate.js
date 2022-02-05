@@ -5,8 +5,6 @@
 	- Handle the Level System.
 */
 
-const SystemLimit = 5000000; // 5.000.000.
-
 /*
 	Handle the giving of the Sanity Level roles.
 
@@ -42,15 +40,15 @@ function HandlePoints(Alfred, ChannelID, User) {
 	if (Alfred.LevelSystem.streammodeon) {
 		if (ChannelID == Alfred.LevelSystem.streammodeid) {
 			/* Give 4 instead of 2 Points in that channel. */
-			if (User.points + Alfred.LevelSystem.streammodepoints <= SystemLimit) User.points += Alfred.LevelSystem.streammodepoints;
-			else User.points = SystemLimit;
+			if (User.points + Alfred.LevelSystem.streammodepoints <= Alfred.LevelSystem.pointlimit) User.points += Alfred.LevelSystem.streammodepoints;
+			else User.points = Alfred.LevelSystem.pointlimit;
 			return;
 		}
 	}
 
 	/* Give 2 Points. */
-	if (User.points + Alfred.LevelSystem.msgpoints <= SystemLimit) User.points += Alfred.LevelSystem.msgpoints;
-	else User.points = SystemLimit;
+	if (User.points + Alfred.LevelSystem.msgpoints <= Alfred.LevelSystem.pointlimit) User.points += Alfred.LevelSystem.msgpoints;
+	else User.points = Alfred.LevelSystem.pointlimit;
 }
 
 

@@ -92,6 +92,7 @@ if (fs.existsSync("resources/data/levelsystem.json")) {
 			}
 
 		],
+		"pointlimit": 5000000, // The Limit of the Points on the Level System.
 		"msgpoints": 2, // Amount of points you'll get on a message.
 		"streammodepoints": 4, // Amount of points you'll get if on stream mode.
 		"streammodeon": false, // If Stream mode is active, or not.
