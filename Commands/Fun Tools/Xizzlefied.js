@@ -27,14 +27,33 @@ function Xizzlefy(Args) {
 module.exports = {
 	Names: ["Xizzlefied", "Xizzified"],
 	Usage: "<Message to Xizzlefy>",
-	Description: "Shuffles some of the words, to sound like Emperor Xizzle.",
+	Description: "Shuffles some of the words, to sound like Emperor Xizzle. You can also use '-l' as the first argument to use the last message instead.",
 	Handler(Message) {
 		if (Message.Value.length == 0) Message.channel.send("Nothing specified, So it is!");
 		else {
 			let Args = Message.Value.split(" "); // Split the Message into an array.
 			if (Args.length > 0) { // Only do this, if the array has a larger size than 0.
-				let Msg = Xizzlefy(Args);
-				Message.channel.send(Msg);
+				if (Args[0] == "-l" || Args[0] == "-L") {
+					/* Try last message fetch. */
+					let Last = Message.channel.messages.cache.map(R => R)[Message.channel.messages.cache.size - 2].content;
+
+					if (Last) {
+						if (Last.length >= 1) {
+							Args = Last.split(" ");
+
+							let Msg = Xizzlefy(Args);
+							Message.channel.send(Msg);
+							return;
+						}
+					}
+
+					Message.channel.send("Nothing specified, So it is!");
+					return;
+
+				} else {
+					let Msg = Xizzlefy(Args);
+					Message.channel.send(Msg);
+				}
 			}
 		}
 	}
