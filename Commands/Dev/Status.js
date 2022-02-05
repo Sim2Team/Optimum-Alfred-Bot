@@ -19,7 +19,7 @@ module.exports = {
 	Description: "Does some Status stuff, such as setting it randomly, or to a specific string.",
 	Dev: true,
 	Handler(Message, Alfred) {
-		const Msg = Message.Value.toLowerCase();
+		const Msg = Message.Value;
 
 		if (Msg.length > 0) {
 			Alfred.Client.user.setActivity(Msg);
