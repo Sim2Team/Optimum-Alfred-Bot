@@ -149,6 +149,7 @@ function RemoveCategory(Alfred, Message, User, Category, Amount) {
 }
 
 
+/* Toggle the Stream Mode state. */
 function ToggleStreammode(Alfred, Message) {
 	if (Alfred.LevelSystem.streammodeon == false) Alfred.LevelSystem.streammodeon = true;
 	else Alfred.LevelSystem.streammodeon = false;
@@ -157,6 +158,7 @@ function ToggleStreammode(Alfred, Message) {
 }
 
 
+/* Fetching the arguments provided. */
 function FetchArgs(Args) {
 	let Obj = { "Type": "", "User": "", "Category": "", "Amount": "" };
 	let FetchType = "";
@@ -191,8 +193,8 @@ function FetchArgs(Args) {
 /* Module: LevelSystem for Devs. */
 module.exports = {
 	Names: ["LevelSystemDev", "LSDev"],
-	Usage: "-t <Type [add, set, remove]> -u <Username / Nickname> -c <Category [points, emotes, contributions]> -a <Amount>`",
-	Description: "Manage the Level System. Additionally to Add, Set and Remove, you can also use `-t streammode` to switch to stream mode or back to normal.",
+	Usage: "-t <Type [add, set, remove, vc]> -u <Username / Nickname> -c <Category [points, emotes, contributions]> -a <Amount>`",
+	Description: "Manage the Level System. Additionally to Add, Set and Remove, you can also use `-t streammode` to switch to stream mode or back to normal. For the VC Type, '-a' are the minutes.",
 	Dev: true,
 	Handler(Message, Alfred) {
 		const Args = Message.Value.toLowerCase().split(" ");
@@ -200,7 +202,7 @@ module.exports = {
 		if (Args.length > 0) {
 			let Obj = FetchArgs(Args);
 
-			if (Obj["Type"] == "add" || Obj["Type"] == "set" || Obj["Type"] == "remove") {
+			if (Obj["Type"] == "add" || Obj["Type"] == "set" || Obj["Type"] == "remove" || Obj["Type"] == "vc") {
 				let Amount = parseInt(Obj["Amount"]);
 
 				if (!isNaN(Amount)) {
@@ -208,6 +210,13 @@ module.exports = {
 						case "add": AddCategory(Alfred, Message, Obj["User"], Obj["Category"], Amount); break;
 						case "set": SetCategory(Alfred, Message, Obj["User"], Obj["Category"], Amount); break;
 						case "remove": RemoveCategory(Alfred, Message, Obj["User"], Obj["Category"], Amount); break;
+						/* Special case for this, -a are the minutes on there. */
+						case "vc": {
+							/* Get the points in the specific stream mode state. */
+							const Points = (Amount * ((Alfred.LevelSystem.streammodeon ? Alfred.LevelSystem.streammodepoints : Alfred.LevelSystem.msgpoints) * 2));
+							AddCategory(Alfred, Message, Obj["User"], "points", Points);
+							break;
+						}
 					}
 
 				} else {

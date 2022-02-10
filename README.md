@@ -12,7 +12,7 @@ Optimum-Alfred-Bot has the following features as of the latest commit:
 **Commands for Optimum Alfred Developers only.**
 
 - [x] `JavaScript <JavaScript Code>` / `JS <JavaScript Code>` - Runs JavaScript code.
-- [x] `LSDev` - Manage the Level System.\nUsage example: `-t <Type [add, set, remove]> -u <Username / Nickname> -c <Category [points, emotes, contributions]> -a <Amount>`. Additionally to Add, Set and Remove, you can also use `-t streammode` to switch to stream mode or back to normal.
+- [x] `LSDev` - Manage the Level System.\nUsage example: `-t <Type [add, set, remove, vc]> -u <Username / Nickname> -c <Category [points, emotes, contributions]> -a <Amount>`. Additionally to Add, Set and Remove, you can also use `-t streammode` to switch to stream mode or back to normal. For the VC Type, '-a' are the minutes.
 - [x] `Reload <Command>` - Reloads a command.
 - [x] `Shutdown` - Save the Level System data back to a file and shut the bot down.
 - [x] `Status [Message To Set]` - Does some Status stuff, such as setting it randomly, or to a specific string.

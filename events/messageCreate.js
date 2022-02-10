@@ -5,6 +5,7 @@
 	- Handle the Level System.
 */
 
+
 /*
 	Handle the giving of the Sanity Level roles.
 
@@ -15,6 +16,7 @@ async function HandleSanityRoleGiving(Alfred, User) {
 	if (UserObj == undefined) return; // Not included.
 
 	let Roles = [ ];
+	let NewRole = "";
 
 	/* Loop through all roles. */
 	const LevelKeys = Object.keys(Alfred.LevelSystem.levels).length;
@@ -22,6 +24,7 @@ async function HandleSanityRoleGiving(Alfred, User) {
 		if (UserObj.points < Alfred.LevelSystem.levels[Idx].points) break; // No role you can get as not enough points.
 
 		Roles.push(Alfred.LevelSystem.levels[Idx].role);
+		NewRole = Alfred.LevelSystem.levels[Idx].name; // Only get the latest role name.
 	}
 
 	let AddRoles = [ ];
@@ -29,7 +32,12 @@ async function HandleSanityRoleGiving(Alfred, User) {
 	if (Roles.length) {
 		AddRoles = Roles.filter(RoleID => !User.roles.cache.has(RoleID));
 
-		if (AddRoles.length) await User.roles.add(AddRoles);
+		if (AddRoles.length) {
+			await User.roles.add(AddRoles);
+
+			/* Handle Sanity Level up message. TODO: Maybe more checks? I'm too lazy for that right now though as it should work fine on the main server. */
+			if (Alfred.LevelSystem.levelupchannelid != undefined) await Alfred.Client.channels.cache.get(Alfred.LevelSystem.levelupchannelid).send(UserObj.name + ", you just reached Sanity Level " + NewRole + "!");
+		}
 	}
 }
 
