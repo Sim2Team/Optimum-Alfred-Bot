@@ -7,21 +7,26 @@
 const Discord = require("discord.js");
 
 const LSClrs = [
-	"#B9010B", "#60bC7B", "#B59C42", "#A7A7D7", "#A542A3", // Sanity Level 0 - 4.
+	"#B9010B", "#60BC7B", "#B59C42", "#A7A7D7", "#A542A3", // Sanity Level 0 - 4.
 	"#BAB748", "#2A7B39", "#5D8BB5", "#12CE61", "#3C1A77", "#000893" // Sanity Level 5 - 10 (Zimmer, Keeble, Dripple, Burple, Ava, Emperor).
 ];
 const LSNoRoleClr = "#99AAB5"; // TODO: Decide which color to show if no role exists for the user or for the Leaderboard | Levels.
 
 
 /* Shows the Top 5 Users from the Level System. */
-function LeaderBoard(Alfred, Message) {
+function LeaderBoard(Alfred, Message, Category) {
+	if (Category != "points" && Category != "contributions" && Category != "emotes") {
+		Message.channel.send("The provided category is not valid.");
+		return;
+	}
+
 	if (!Object.keys(Alfred.LevelSystem.users).length) Message.channel.send("There are no users in the Level System yet.");
 	else {
 		let Data = [ ];
 
 		let Objects = Object.keys(Alfred.LevelSystem.users);
 		for (let Idx = 0; Idx < Objects.length; Idx++) {
-			Data.push( { "Name": Alfred.LevelSystem.users[Objects[Idx]].name, "Points": Alfred.LevelSystem.users[Objects[Idx]].points } );
+			Data.push( { "Name": Alfred.LevelSystem.users[Objects[Idx]].name, "Points": Alfred.LevelSystem.users[Objects[Idx]][Category] } );
 		}
 
 		Data.sort((A, B) => (B["Points"] > A["Points"]) ? 1 : ((A["Points"] > B["Points"]) ? -1 : 0)); // Easy one line sort.
@@ -30,7 +35,7 @@ function LeaderBoard(Alfred, Message) {
 		const Embed = new Discord.MessageEmbed()
 			.setTitle("Level System - Leaderboard")
 			.setColor(LSNoRoleClr)
-			.setDescription("Showing the Top 5 Active Users of this Server.")
+			.setDescription("Showing the Top 5 Active Users of this Server in the Category: " + Category + ".")
 			.setThumbnail("https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sim2Team.png")
 			.addField("1. " + (Len >= 1 ? Data[0]["Name"] : "Unknown"), (Len >= 1 ? Data[0]["Points"].toString() : (0).toString()))
 			.addField("2. " + (Len >= 2 ? Data[1]["Name"] : "Unknown"), (Len >= 2 ? Data[1]["Points"].toString() : (0).toString()))
@@ -145,18 +150,44 @@ function UserInfo(Alfred, Message, Name) {
 }
 
 
+/* Links to some more info. */
+function ShowInfo(Message) {
+	const Embed = new Discord.MessageEmbed()
+		.setTitle("Level System - Info")
+		.setColor(LSNoRoleClr)
+		.setThumbnail("https://raw.githubusercontent.com/Sim2Team/Optimum-Alfred-Bot/main/resources/Sim2Team.png")
+		.setURL("https://sim2team.github.io/wiki/server/levelsystem")
+		.setDescription("You can find some more information about the Level System on the Sim2Wiki Server Section.");
+	Message.channel.send({ embeds: [ Embed ] });
+}
+
+
 /* Module: LevelSystem. */
 module.exports = {
 	Names: ["LevelSystem", "LS"],
-	Description: "A command related to the Sanity Level System. You can use an optional argument called \"lb\" for a Leaderboard or \"levels\" for the Levels or a user's nickname to show the User Info of the Level System.",
+	Description: "A command related to the Sanity Level System. You can use an optional argument called \"lb\" for a Leaderboard or \"levels\" for the Levels, a user's nickname to show the User Info of the Level System or \"info\" to link to more Informations.",
 	Handler(Message, Alfred) {
 		const Msg = Message.Value.toLowerCase();
 
 		if (Msg.length == 0) UserInfo(Alfred, Message, Message.member.displayName.toLowerCase()); // In this case, show your info.
 		else {
-			if (Msg == "lb" || Msg == "leaderboard") LeaderBoard(Alfred, Message); // The top 5 users of the Level System.
-			else if (Msg == "levels") ShowLevels(Alfred, Message); // Show the Levels.
-			else UserInfo(Alfred, Message, Msg); // User Info of a provided nickname.
+			const Args = Msg.split(" ");
+
+			if (Args.length >= 1) {
+				if (Args[0] == "lb" || Args[0] == "leaderboard") {
+					if (Args.length == 1) LeaderBoard(Alfred, Message, "points"); // The top 5 users of the Level System.
+					else LeaderBoard(Alfred, Message, Args[1]);
+
+				} else if (Msg == "levels") {
+					ShowLevels(Alfred, Message); // Show the Levels.
+
+				} else if (Msg == "info") {
+					ShowInfo(Message); // Link to some more info.
+
+				} else {
+					UserInfo(Alfred, Message, Msg); // User Info of a provided nickname.
+				}
+			}
 		}
 	}
 }
