@@ -42,8 +42,7 @@ async function HandleSanityRoleGiving(Alfred, User) {
 }
 
 
-/*
-	Handle Points for an existing user. */
+/* Handle Points for an existing user. */
 function HandlePoints(Alfred, ChannelID, User) {
 	if (Alfred.LevelSystem.streammodeon) {
 		if (ChannelID == Alfred.LevelSystem.streammodeid) {

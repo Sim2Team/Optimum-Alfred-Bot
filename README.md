@@ -22,7 +22,7 @@ Optimum-Alfred-Bot has the following features as of the latest commit:
 
 **Some fun commands for the bot, such as generating a random value.**
 
-- [x] `Quiz [Game] [ID]` - Some Quiz fun stuff. Provide the game name as the first argument, then optional the Quiz ID to get the correct answer for that question.
+- [x] `Quiz [Game] [ID]` - Some Quiz fun stuff. Provide the game name as the first argument, then optional the Quiz ID to get the Quiz of a specific ID.
 - [x] `Random [Min Value] [Max Value]` - Just generates a random value between a Min and Max value.
 - [x] `Xizzlefied [Message]` / `Xizzified [Message]` - Sorta like Owoify and modifying words, but instead with Xizzle and shuffling the word order. You can also use '-l' as the first argument to use the last message instead.
 

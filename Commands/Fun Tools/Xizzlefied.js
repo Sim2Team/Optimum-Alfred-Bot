@@ -25,7 +25,7 @@ function Xizzlefy(Args) {
 
 /* Module: Xizzlefied. */
 module.exports = {
-	Names: ["Xizzlefied", "Xizzified"],
+	Names: ["Xizzlefied", "Xizzified", "Xizzify"],
 	Usage: "<Message to Xizzlefy>",
 	Description: "Shuffles some of the words, to sound like Emperor Xizzle. You can also use '-l' as the first argument to use the last message instead.",
 	Handler(Message) {

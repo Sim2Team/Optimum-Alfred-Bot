@@ -5,6 +5,8 @@
 	This implementation is based of how The Sims 2 Game Boy Advance does it (at least from how I understand it - SuperSaiyajinStackZ).
 */
 
+const Discord = require("discord.js");
+
 
 function RandomNum(Seed, Min, Max) {
 	if (Min < Max) {
@@ -22,6 +24,19 @@ function RandomNum(Seed, Min, Max) {
 }
 
 
+function DoRNG(Message, Min, Max) {
+	const Res = RandomNum(Date.now(), Min, Max);
+
+	const Embed = new Discord.MessageEmbed()
+		.setTitle("Random - Sims 2 GBA Method")
+		.setDescription("Generating a random number in a The Sims 2 GBA RNG Style.")
+		.addField("Min Value", Min.toString())
+		.addField("Max Value", Max.toString())
+		.addField("Generated Result", Res.toString());
+	Message.channel.send({ embeds: [ Embed ] });
+}
+
+
 /* Module: Random. */
 module.exports = {
 	Names: ["Random"],
@@ -30,8 +45,10 @@ module.exports = {
 	Handler(Message) {
 		let Msg = Message.Value;
 
-		if (Msg.length < 1) Message.channel.send("Please provide a min value and a max value.");
-		else {
+		if (Msg.length < 1) {
+			DoRNG(Message, 0, 0x7FFF);
+
+		} else {
 			Msg = Msg.split(" ");
 
 			if (Msg.length >= 2) {
@@ -40,8 +57,8 @@ module.exports = {
 
 				if (!isNaN(Min) && !isNaN(Max)) {
 					if (Min < Max) {
-						Message.channel.send("The generated random number between " + Min.toString() + " and " + Max.toString() + " is: " + RandomNum(Date.now(), Min, Max).toString() + ".");
-
+						DoRNG(Message, Min, Max);
+						
 					} else {
 						Message.channel.send("The Min value should be smaller than the Max value.");
 					}
