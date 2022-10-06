@@ -2,6 +2,9 @@
 
 Optimum-Alfred-Bot is a discord bot written in Node.js / Discord.js for the [Sim2Server](https://sim2team.github.io/wiki/server).
 
+## NOTE
+- Optimum-Alfred-Bot is goin' to be rewritten to only have Sims related content.
+
 
 ## Features
 Optimum-Alfred-Bot has the following features as of the latest commit:
